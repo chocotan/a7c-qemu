@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "saved_state_sha256": "fd5811e44c48af55e7db18e09f0dcf63d36f062875dee55e92f92f9a45f66ee6",
+  "entries": 1686,
+  "device_nodes": 365,
+  "scope": "main separate fakeroot session, all five original-tree mode/uid/gid and all device major/minor readback"
+}

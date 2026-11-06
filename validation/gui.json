@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "actions": [
+    "native main",
+    "MENU button",
+    "Back button",
+    "MENU re-entry",
+    "WM_DELETE_WINDOW"
+  ],
+  "experimental_ENTER_exposed": false,
+  "run": "/home/choco/Downloads/20261009sony7c2/final/a7c-qemu/output/20261106-233844",
+  "error": null
+}

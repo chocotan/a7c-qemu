@@ -1,0 +1,29 @@
+{
+  "original_run": "output/20261106-224252",
+  "log_sha256": "9a21c324a871ef312f1c04c7b6d99a7eadffc92822671d763d1c48eaae1ee4ab",
+  "kind": 1,
+  "source_rect": [
+    28,
+    0,
+    144,
+    28
+  ],
+  "destination_rect": [
+    28,
+    0,
+    448,
+    28
+  ],
+  "native_filter_word": "0x10001",
+  "filter_enum_semantics_verified": false,
+  "scale_rendered": false,
+  "qmp_exit_code": 0,
+  "raw_values": {
+    "GEMINI.scale.kind": 1,
+    "GEMINI.scale.source.xy": 28,
+    "GEMINI.scale.source.wh": 1835152,
+    "GEMINI.scale.dest.xy": 28,
+    "GEMINI.scale.dest.wh": 1835456,
+    "GEMINI.scale.filter": 65537
+  }
+}

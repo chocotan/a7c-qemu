@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "camera": "ILCE-7C",
+  "version": "2.03",
+  "scope": "delivered MENU/Back/Refresh window and original main/MENU lifecycle",
+  "original_run": "output/20261106-233800",
+  "gui_run": "output/20261106-233844",
+  "original_ap": true,
+  "original_shooting_view_created": true,
+  "shooting_view_lens_retracted_warning": true,
+  "full_shooting_hud_verified": false,
+  "original_menu": true,
+  "menu_back_to_main_pixels_identical": true,
+  "menu_reentry_pixels_identical": true,
+  "gui_verified": true,
+  "gui_original_pixels_independently_verified": true,
+  "delivered_controls": [
+    "MENU",
+    "Back",
+    "Refresh"
+  ],
+  "menu_base": "0x150100f0",
+  "experimental_ENTER_stable": false,
+  "experimental_ENTER_exposed": false,
+  "experimental_ENTER_note": "original 0x15010040 statically verified and single native dialog seen in v7; v8 GUI wait failed, retained; not a release control",
+  "qmp_exit_codes": [
+    0,
+    0
+  ],
+  "signals_sent": [],
+  "capture_verified": false,
+  "physical_asic_compatibility_verified": false,
+  "frames": {
+    "back": {
+      "frame": 14,
+      "source_physical": 582254592,
+      "raw_sha256": "db0825266aa204ac5ae146cf07e9b3f6fcb621118ee8c2dd3b3dbe67b19a796c",
+      "segments": 150,
+      "png_sha256": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c"
+    },
+    "main": {
+      "frame": 6,
+      "source_physical": 582254592,
+      "raw_sha256": "db0825266aa204ac5ae146cf07e9b3f6fcb621118ee8c2dd3b3dbe67b19a796c",
+      "segments": 150,
+      "png_sha256": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c"
+    },
+    "menu-reopened": {
+      "frame": 15,
+      "source_physical": 581640192,
+      "raw_sha256": "c47b9da0c72fb6b8828899c210b81021a6fed16034ea3ef4ca711c03cb1b3a29",
+      "segments": 150,
+      "png_sha256": "e0cb1ba1dee50a8ede87bef46d69e7cbcee73d3d5272fcec8aa4cac3bcf7c348"
+    },
+    "menu": {
+      "frame": 13,
+      "source_physical": 581640192,
+      "raw_sha256": "c47b9da0c72fb6b8828899c210b81021a6fed16034ea3ef4ca711c03cb1b3a29",
+      "segments": 150,
+      "png_sha256": "e0cb1ba1dee50a8ede87bef46d69e7cbcee73d3d5272fcec8aa4cac3bcf7c348"
+    }
+  },
+  "gui_frames": {
+    "back-12": {
+      "frame": 13,
+      "source_physical": 581640192,
+      "raw_sha256": "db0825266aa204ac5ae146cf07e9b3f6fcb621118ee8c2dd3b3dbe67b19a796c",
+      "segments": 150,
+      "png_sha256": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c"
+    },
+    "main": {
+      "frame": 6,
+      "source_physical": 582254592,
+      "raw_sha256": "db0825266aa204ac5ae146cf07e9b3f6fcb621118ee8c2dd3b3dbe67b19a796c",
+      "segments": 150,
+      "png_sha256": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c"
+    },
+    "menu-13": {
+      "frame": 14,
+      "source_physical": 582254592,
+      "raw_sha256": "c47b9da0c72fb6b8828899c210b81021a6fed16034ea3ef4ca711c03cb1b3a29",
+      "segments": 150,
+      "png_sha256": "e0cb1ba1dee50a8ede87bef46d69e7cbcee73d3d5272fcec8aa4cac3bcf7c348"
+    },
+    "menu-6": {
+      "frame": 12,
+      "source_physical": 582254592,
+      "raw_sha256": "c47b9da0c72fb6b8828899c210b81021a6fed16034ea3ef4ca711c03cb1b3a29",
+      "segments": 150,
+      "png_sha256": "e0cb1ba1dee50a8ede87bef46d69e7cbcee73d3d5272fcec8aa4cac3bcf7c348"
+    }
+  },
+  "logs": {
+    "output/20261106-233800": "037450262f07af735b97794547df9c3b8bee4393496a51ec1cc64fc0880b37c9",
+    "output/20261106-233844": "e3f12665a574f29ec7e8ca6b2194b2b6fc697b1c0e4a87c935cfe837f137b1e2"
+  },
+  "published_images": {
+    "a7c-main.png": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c",
+    "a7c-menu.png": "e0cb1ba1dee50a8ede87bef46d69e7cbcee73d3d5272fcec8aa4cac3bcf7c348"
+  }
+}

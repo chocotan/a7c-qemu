@@ -1,0 +1,118 @@
+{
+  "tested_at_utc": "2026-11-06T14:24:32.573839+00:00",
+  "version": "QEMU emulator version 11.1.2",
+  "machine": "a7c-machine",
+  "cpu_model": "cortex-a9",
+  "cpus": 1,
+  "ram_mib": 1024,
+  "model": "experimental CXD90045-family functional model",
+  "sony_timers": 9,
+  "pl181": true,
+  "pl011": true,
+  "guest_disks": [],
+  "guest_network": [],
+  "qmp_quit_exit_code": 0,
+  "board_realization_verified": true,
+  "gpe_startup_guard_host_verified": true,
+  "kernel_boot_verified": false,
+  "firmware_boot_verified": false,
+  "ap_verified": false,
+  "physical_asic_compatibility_verified": false,
+  "binary": {
+    "path": "work/qemu-src/build-a7c/qemu-system-arm",
+    "bytes": 93991712,
+    "sha256": "97a04e44228807762fcfe259f1eddde44d4068edcf2bb733ceff85b57ea084fc"
+  },
+  "qmp_argv": [
+    "/home/choco/Downloads/20261009sony7c2/final/a7c-qemu/work/qemu-src/build-a7c/qemu-system-arm",
+    "-M",
+    "a7c",
+    "-cpu",
+    "cortex-a9",
+    "-smp",
+    "1",
+    "-m",
+    "1024",
+    "-S",
+    "-nodefaults",
+    "-display",
+    "none",
+    "-serial",
+    "none",
+    "-monitor",
+    "none",
+    "-nic",
+    "none",
+    "-qmp",
+    "stdio"
+  ],
+  "inputs": [
+    {
+      "path": "/home/choco/Downloads/20261009sony7c2/sources/qemu-11.1.2.tar.xz",
+      "bytes": 141815216,
+      "sha256": "731b5681e4bb18be313231579b8efd0296c5b015fa36dc533874b639ba838016"
+    },
+    {
+      "path": "source/qemu/dtc-b6910bec.tar.xz",
+      "bytes": 315332,
+      "sha256": "c1fb23f4f39fc88da4a1f89b06ea13e8683de886ee77dbb99369f8763dfe809e"
+    },
+    {
+      "path": "build-qemu.sh",
+      "bytes": 6730,
+      "sha256": "542f2d973720b405ce52d79e007612215110548312629a2eff838edd0155c0a1"
+    },
+    {
+      "path": "source/qemu/0001-register-a7c.patch",
+      "bytes": 1369,
+      "sha256": "794783d68bdb2ade4e69aecf21c631fd5e1c10df142d5d6c4dea2d7999ea31e3"
+    },
+    {
+      "path": "source/qemu/hw/arm/a7c.c",
+      "bytes": 8347,
+      "sha256": "bd64445b5bd76e59ceac1f9fd656b5e6bd655078d3ae5104b28aa847d0bdf9fd"
+    },
+    {
+      "path": "source/qemu/hw/arm/a7c-gpe-init.h",
+      "bytes": 455,
+      "sha256": "fb4902c4b649a24e7b6cd63370be28887d31390b285e1a27df0eb5d196ab7c7c"
+    },
+    {
+      "path": "source/qemu/hw/timer/sony_hwtimer.c",
+      "bytes": 4233,
+      "sha256": "8383c5cab5fcadcc024bcf298100cfe707964bf10cf26bc72802b605fb579817"
+    },
+    {
+      "path": "tests/test-a7c-gpe-init.c",
+      "bytes": 972,
+      "sha256": "bb36df0e13ca694d808c6b9319aa1c5fca7718d6f93c440e7527679ab1602cd7"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "work/qemu-src/build-a7c/configure.log",
+      "bytes": 29374,
+      "sha256": "12a4cef576b952f003f7f49208b57bf4675bc838ccc4da32b2dbd363ddf40288"
+    },
+    {
+      "path": "work/qemu-src/build-a7c/build.log",
+      "bytes": 150150,
+      "sha256": "5913ecbc8cfacd97f380b85df5765e8bba6a69ad319141cd04bf961004a87b8f"
+    },
+    {
+      "path": "work/qemu-src/build-a7c/verification-qmp.log",
+      "bytes": 22962,
+      "sha256": "5c33475056755945c5e827c1227b76db194c0d6f279b91625a8bb1f2fcab626e"
+    },
+    {
+      "path": "work/qemu-src/build-a7c/verification-stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "work/qemu-src/build-a7c/verification-gpe-init.log",
+      "bytes": 102,
+      "sha256": "bd85d479a758a8289b1579231f8198f58179b2b89d9349f84deec3d889904075"
+    }
+  ]
+}

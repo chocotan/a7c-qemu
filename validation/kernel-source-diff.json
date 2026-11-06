@@ -1,0 +1,73 @@
+{
+  "reference": "ILCE-7M3 4.04 published kernel",
+  "target": "ILCE-7C 2.03 published kernel",
+  "changed_files": [
+    {
+      "path": "linux/drivers/usb/dwc3/core.h",
+      "a7m3_sha256": "426436db3376cbc2a9e2cc2e1315113e374973552638a2d9a966720e41bc6569",
+      "a7c_sha256": "19644712e5f9d56762ac0c053b4f37c22d5b28543a1d511b152bfa2c1791e5f0"
+    },
+    {
+      "path": "linux/drivers/usb/dwc3/ep0.c",
+      "a7m3_sha256": "fdfffc8b9dc85ea04adbe9b6f404c45d5cdc5adfa18f5564cbdcce82faf11acc",
+      "a7c_sha256": "48742d4dc629ba06bc087dbb947ede318ed974d7a1cf34826094194b5416e7c7"
+    },
+    {
+      "path": "linux/drivers/usb/dwc3/gadget.c",
+      "a7m3_sha256": "aaeb1f35be23994ef67f966623a26533033c053e90e9d7908326d0f89f33579c",
+      "a7c_sha256": "104be95a8034daf957a6aa3e6af687ceac8f69800b7d9af197890149713f1131"
+    },
+    {
+      "path": "linux/drivers/usb/f_usb/usb_otg.c",
+      "a7m3_sha256": "f6480cfbe38a72572b3834a5d676f08afb38cc3dc4edb43d40da3db9e8bda6a1",
+      "a7c_sha256": "e5de34e5dde030bd72464649611209e67c1f2db916d9600ab9a97751f7224384"
+    },
+    {
+      "path": "linux/drivers/usb/f_usb/usb_otg.h",
+      "a7m3_sha256": "96e783aecade4cebbb116a00a90795e288c8765dcae10db3709cb2c234fbe503",
+      "a7c_sha256": "7daf3ae89ea74e01f95b575c53190e2bdf9e3c1da395c0a1de210d5e5451e6a5"
+    },
+    {
+      "path": "linux/drivers/usb/gcore/usb_gcore_desc.c",
+      "a7m3_sha256": "bac30757222fc0024a9b9656e5fb0514499b9a28a0c1df6a458c56a04326d38c",
+      "a7c_sha256": "2c8b318b88556452d24e633022c82b6b5c3e7e55520874af0eab5012859298f1"
+    },
+    {
+      "path": "linux/drivers/usb/gcore/usb_gcore_ep.c",
+      "a7m3_sha256": "18d467fdbe99cc1d4e6ed52397d62400e7bca051de1eabd45be4448bc84a4f30",
+      "a7c_sha256": "e5e001b69587866c86cc1192e35c40e7a4c4be314a0ef279b8d49213187a7962"
+    },
+    {
+      "path": "linux/drivers/usb/gcore/usb_gcore_main.c",
+      "a7m3_sha256": "f26669c1949bf75ed2cd15065fa8feec0530f53e6ad06a5e1862f8ae88a9d41d",
+      "a7c_sha256": "7877f80bf9e822c87f2937326d806af2f9d4705c0f4cae244b695f7bb46865fd"
+    },
+    {
+      "path": "linux/drivers/usb/gcore/usb_gcore_setup.c",
+      "a7m3_sha256": "fbc790d8fbc514532a0664098f78b8eeab5fedff2db18768115bd0313f7170e4",
+      "a7c_sha256": "dd66affe10013be88c9af6dcacb1e30304cf4b3b095df5df499423777d020d09"
+    },
+    {
+      "path": "linux/drivers/usb/gcore/usb_otgcore.c",
+      "a7m3_sha256": "874e329e12fcd393f671e5691cab6197fcf7bdf4354760e723cb1c49141937fe",
+      "a7c_sha256": "538c180af1ece8cb8bb8e642b4a42750f2bfbf13e970da8521ac26c92ecee4c9"
+    },
+    {
+      "path": "linux/include/linux/usb/f_usb/usb_otg_control.h",
+      "a7m3_sha256": "1ea8b181f116d1c49cacf51f38198302f22a1fc27e159d049c292823532f8d21",
+      "a7c_sha256": "7e2052651563eaaf7439d5b6c6760ca21a62ccb7bd64452cdd5219f86b20f4f1"
+    },
+    {
+      "path": "linux/include/linux/usb/gcore/usb_gadgetcore.h",
+      "a7m3_sha256": "e928e0a1d3024896a176e0aa6e9b8efbef4faa110ce8a038a230c7f7fab16891",
+      "a7c_sha256": "24fc43978be31517ee2c765d2852014c945d49b49b9aae45839906df6cde90e9"
+    },
+    {
+      "path": "linux/include/linux/usb/gcore/usb_otgcore.h",
+      "a7m3_sha256": "9b617cdf0cac334b671f9d36b80b51783e08ebec5fbd221888e81644e0df920e",
+      "a7c_sha256": "1abc3eed872f14306a4187a79de8601a70672fd1ec84bc9a76fe64efe2c291d6"
+    }
+  ],
+  "files_a7m3": 19678,
+  "files_a7c": 19678
+}

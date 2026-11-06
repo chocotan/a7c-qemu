@@ -1,0 +1,76 @@
+{
+  "runs": [
+    {
+      "run": "output/20261106-223652",
+      "log_sha256": "4b94e3b8e4f6b652ff751a6565415e16b3a533963b36a910d5f3195627b0bc20",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-224014",
+      "log_sha256": "4459213cd54093e7eda72333fdc753449a80cca322a512791d63bc9b71dc6cb0",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-224252",
+      "log_sha256": "9a21c324a871ef312f1c04c7b6d99a7eadffc92822671d763d1c48eaae1ee4ab",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-225802",
+      "log_sha256": "2fc3aabfe9c0de7571dfd657f99cef4e9df234cdeb189718489f51ecc2b9baa2",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-230445",
+      "log_sha256": "f11a7eb111d93bf7140cf03a025b7f4af8c2c3b8e3283767329c4328c426ea54",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-231746",
+      "log_sha256": "9a731fc87495c03cc1dd60ebbedef4a13559068c0c181ed85489e464e58d8b1b",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-231835",
+      "log_sha256": "7a5cb2f09d94aab81ac9e90adb19418881caf14844209816a4639878fcebd622",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-232601",
+      "log_sha256": "77d0cf827b343b2f380221422df3f1df53660b9f2aad1a79cb7f193d415dc752",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-233325",
+      "log_sha256": "f6d398b829ce9a8f154dd9994feaa881b4847f582524ba6ab6c76cde16aa23d6",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-233800",
+      "log_sha256": "037450262f07af735b97794547df9c3b8bee4393496a51ec1cc64fc0880b37c9",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    },
+    {
+      "run": "output/20261106-233844",
+      "log_sha256": "e3f12665a574f29ec7e8ca6b2194b2b6fc697b1c0e4a87c935cfe837f137b1e2",
+      "qmp_exit_code": 0,
+      "source_run_preserved": true
+    }
+  ],
+  "original_failures_retained": true,
+  "experimental_ENTER_stable": false,
+  "v7_gui_ENTER_frame_coherent": false,
+  "v8_gui_ENTER_wait_failed": true,
+  "v9_partial_frame15_not_admitted": true,
+  "final_acceptance": "validation/ui-acceptance-v10.json"
+}

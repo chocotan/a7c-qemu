@@ -1,0 +1,775 @@
+{
+  "status": "static A7C ELF/native-reference/prologue/trampoline checks passed",
+  "runtime_verified": false,
+  "original_main_verified": false,
+  "original_menu_verified": false,
+  "capture_verified": false,
+  "sha256": {
+    "libObj.so": "a05b335ef505cc830d1f7fbead792eca4e77dbdb4e642d2225bd9983201ddfa8",
+    "viewUnified2.so": "236532d4434ceaf5b575aca284fbdca99c8bb4cf2eea638c3f2064feb3182d77",
+    "libIMDB.so": "51a724171774d443504ca08d25c6e2d329450cc4b1002b3b13b06711d1263516"
+  },
+  "code_entries": 33,
+  "data_entries": 12,
+  "view_entries": 6,
+  "reference_checked": true,
+  "map": {
+    "0x2839a4": "0x3ef9b8",
+    "0x2bcfe1": "0x42fa23",
+    "0x5e5dc0": "0x617024",
+    "0x5e8490": "0x6196f8",
+    "0x60ec64": "0x63e1b0",
+    "0x6158e1": "0x644e31",
+    "0x64f9b9": "0x684e65",
+    "0x667f25": "0x69b295",
+    "0x668589": "0x69b8f9",
+    "0x669dcd": "0x69d13d",
+    "0x6badbb": "0x6f6dcb",
+    "0x6bf07d": "0x6fb08d",
+    "0x6bf350": "0x6fb360",
+    "0x73a100": "0x774ff0",
+    "0x73a330": "0x775220",
+    "0x73a470": "0x775360",
+    "0x73bce0": "0x776bd0",
+    "0x755a71": "0x791f91",
+    "0x77f711": "0x7bbc31",
+    "0x77f721": "0x7bbc41",
+    "0x77f7c1": "0x7bbce1",
+    "0x77f801": "0x7bbd21",
+    "0x784911": "0x7c0e31",
+    "0x78d780": "0x7c9ca0",
+    "0x799790": "0x7d5cb0",
+    "0x7997b0": "0x7d5cd0",
+    "0x7997d0": "0x7d5cf0",
+    "0x799860": "0x7d5d80",
+    "0x80a758": "0x847f78",
+    "0x80aa40": "0x848260",
+    "0x80ad58": "0x848578",
+    "0x80aedc": "0x8486fc",
+    "0x825349": "0x862b69",
+    "0x826169": "0x863989",
+    "0x82617b": "0x86399b",
+    "0x878328": "0xb128f8",
+    "0x87ba90": "0xb160c0",
+    "0x87d738": "0xb17ce0",
+    "0x87d930": "0xb17f10",
+    "0x124e600": "0x13b5700",
+    "0x124f9b0": "0x13b6f40",
+    "0x1252f90": "0x13ba2b0",
+    "0x1253120": "0x13ba440",
+    "0x1253398": "0x13ba6b8",
+    "0x12537f8": "0x13bab18",
+    "0x12f3394": "0x1457cf8",
+    "0x12f38b8": "0x1458220",
+    "0x12f4380": "0x1458ce8",
+    "0x12f4388": "0x1458cf0",
+    "0x12f438c": "0x1458cf4",
+    "0x13289f4": "0x148d34c"
+  },
+  "native_references": [
+    {
+      "name": "graphics",
+      "actual": "0x1457cf8",
+      "expected": "0x1457cf8"
+    },
+    {
+      "name": "DisplayManager",
+      "actual": "0x1458220",
+      "expected": "0x1458220"
+    },
+    {
+      "name": "completion_callback",
+      "actual": "0x1458cf0",
+      "expected": "0x1458cf0"
+    },
+    {
+      "name": "completion_argument",
+      "actual": "0x1458ce8",
+      "expected": "0x1458ce8"
+    },
+    {
+      "name": "completion_semaphore",
+      "actual": "0x1458cf4",
+      "expected": "0x1458cf4"
+    },
+    {
+      "name": "Bitmap.read",
+      "actual": "0x69b8f9",
+      "expected": "0x69b8f9"
+    },
+    {
+      "name": "Bitmap.unlock",
+      "actual": "0x69b295",
+      "expected": "0x69b295"
+    }
+  ],
+  "rtti": {
+    "0x13b5700": "N3grm3bmp10BitmapImplE",
+    "0x13b6f40": "N9dmpNative10WindowImplE",
+    "0x13ba2b0": "N6gemini19PlaneTextureMusashiE",
+    "0x13ba440": "N6gemini30GraphicsContext3DShaderMusashiE",
+    "0x13ba6b8": "N6gemini24GraphicsContext3DMusashiE",
+    "0x13bab18": "N6gemini15RenderTargetOGLE"
+  },
+  "root_menu_subobject": "0x154",
+  "hooks": [
+    {
+      "address": "0x6196f8",
+      "replacement": "observe_draw",
+      "prologue": "b0b5044682b000af",
+      "copies_to_trampoline": true,
+      "instructions": [
+        "push {r4, r5, r7, lr}",
+        "mov r4, r0",
+        "sub sp, #8",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x7d5cb0",
+      "replacement": "software_init",
+      "prologue": "034880b4784400af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "ldr r0, [pc, #0xc]",
+        "push {r7}",
+        "add r0, pc",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x7d5cd0",
+      "replacement": "software_exit",
+      "prologue": "034880b4784400af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "ldr r0, [pc, #0xc]",
+        "push {r7}",
+        "add r0, pc",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x7d5cf0",
+      "replacement": "software_fill",
+      "prologue": "02290b46f0b585b0",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "cmp r1, #2",
+        "mov r3, r1",
+        "push {r4, r5, r6, r7, lr}",
+        "sub sp, #0x14"
+      ]
+    },
+    {
+      "address": "0x7d5d80",
+      "replacement": "software_blit",
+      "prologue": "02290b46f0b585b0",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "cmp r1, #2",
+        "mov r3, r1",
+        "push {r4, r5, r6, r7, lr}",
+        "sub sp, #0x14"
+      ]
+    },
+    {
+      "address": "0x774ff0",
+      "replacement": "software_present",
+      "prologue": "2de9f04184b00546",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, lr}",
+        "sub sp, #0x10",
+        "mov r5, r0"
+      ]
+    },
+    {
+      "address": "0x775220",
+      "replacement": "software_engine_wait",
+      "prologue": "f0b583b0441e00af",
+      "copies_to_trampoline": true,
+      "instructions": [
+        "push {r4, r5, r6, r7, lr}",
+        "sub sp, #0xc",
+        "subs r4, r0, #1",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x6fb360",
+      "replacement": "software_headless_update",
+      "prologue": "b0b50c4686b01c49",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push {r4, r5, r7, lr}",
+        "mov r4, r1",
+        "sub sp, #0x18",
+        "ldr r1, [pc, #0x70]"
+      ]
+    },
+    {
+      "address": "0x63e1b0",
+      "replacement": "software_lz_decode",
+      "prologue": "2de9f04f8db000af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "sub sp, #0x34",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x848578",
+      "replacement": "(void *)gemini_probe_solid",
+      "prologue": "2de9f0472ded048b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, lr}",
+        "vpush {d8, d9}"
+      ]
+    },
+    {
+      "address": "0x848260",
+      "replacement": "(void *)gemini_probe_rect",
+      "prologue": "2de9f04f2ded068b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "vpush {d8, d9, d10}"
+      ]
+    },
+    {
+      "address": "0x847f78",
+      "replacement": "(void *)gemini_probe_quad",
+      "prologue": "2de9f04f2ded068b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "vpush {d8, d9, d10}"
+      ]
+    },
+    {
+      "address": "0x8486fc",
+      "replacement": "(void *)gemini_probe_line",
+      "prologue": "2de9f04f83b002af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "sub sp, #0xc",
+        "add r7, sp, #8"
+      ]
+    },
+    {
+      "address": "0x7c9ca0",
+      "replacement": "software_slow_clear",
+      "prologue": "2de9f04f2ded028b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "vpush {d8}"
+      ]
+    }
+  ],
+  "callable_prefixes": {
+    "0x617024": "034b044a7b4480b500af9b58186880bd",
+    "0x6196f8": "b0b5044682b000af23f052fe27f0feff",
+    "0x7d5cb0": "034880b4784400afbd4680bc02f0b8b8",
+    "0x7d5cd0": "034880b4784400afbd4680bc02f0c0ba",
+    "0x7d5cf0": "02290b46f0b585b0144604af00d82ab9",
+    "0x7d5d80": "02290b46f0b585b0144604af00d82ab9",
+    "0x774ff0": "2de9f04184b0054604af036b1f2b02d9",
+    "0x775220": "f0b583b0441e00af072c09d8dfe804f0",
+    "0x775360": "2de9f04f87b0c64d04af044603687d44",
+    "0x776bd0": "2de9f041a0b0834c00af38467c44fff7",
+    "0x6fb360": "b0b50c4686b01c4900af0a4605463846",
+    "0x63e1b0": "2de9f04f8db000af0546fff7f5ff6e49",
+    "0x848578": "2de9f0472ded048b82b002af92460022",
+    "0x848260": "2de9f04f2ded068b87b0984602af0446",
+    "0x847f78": "2de9f04f2ded068b87b0994602af0446",
+    "0x8486fc": "2de9f04f83b002af9246002204468b46",
+    "0x7c9ca0": "2de9f04f2ded028b9bb000afdff81ca6",
+    "0x69d13d": "002880b500af08dc0d484ff4b8720d49",
+    "0x684e65": "80b500af18f028f8bde88040fff794be",
+    "0x69b8f9": "2de9f04383b000f1240600af04460d46",
+    "0x69b295": "b0b5044600f1240500af28466ef6dee2",
+    "0x6f6dcb": "80b500afbde88040fff7a9bf80b582b0",
+    "0x6fb08d": "0d4880b57844006800af13f66ae648b1",
+    "0x7bbc31": "80b400afbd4680bcd5f7fabcaff30080",
+    "0x7bbc41": "104bb0b5044600af7b440cb9b0bd00bf",
+    "0x7bbce1": "80b400af20b9bd4680bc7047aff30080",
+    "0x7bbd21": "80b400af20b9bd4680bc7047aff30080",
+    "0x7c0e31": "2de9f04100affaf7fbfe644d7d440446",
+    "0x791f91": "00f5de614ff0013290b401f1100300af",
+    "0x862b69": "80b500affff7c8ff08b190f9040080bd",
+    "0x863989": "026898b50b46546a00af02210022a047",
+    "0x86399b": "036880b500af9b6a984780bd0000044b",
+    "0x644e31": "2de9f04184b002af154606460c460846"
+  },
+  "menu_helper": {
+    "address": "0x42fa23",
+    "bytes": "b0b582b000af054638460c4654f54cea3846002140f24b6255f52ee888b1fff7cbff2b6828b1d3f89030284640f2825104e0d3f89030284640f645210122984705e024b92b68284611219b699847384654f5b6e907f10807bd46b0bd"
+  },
+  "rm_trampoline": {
+    "address": "0x775360",
+    "literal": "0xc5da16",
+    "bytes": "2de9f04f87b0034d04af0446dff800f06d53770016dac500"
+  },
+  "imdb_profile": {
+    "source_sha256": "51a724171774d443504ca08d25c6e2d329450cc4b1002b3b13b06711d1263516",
+    "imdb_raw": "0xe2a4",
+    "records": 211,
+    "changed": [
+      {
+        "name": "/usr/kmod/liro.ko",
+        "file_offset": 27240,
+        "before": 2147483647,
+        "after": 2147483645
+      },
+      {
+        "name": "libUsbBusPower.so",
+        "file_offset": 29000,
+        "before": 4294967231,
+        "after": 4294967229
+      },
+      {
+        "name": "libInfraUsbCmn.so",
+        "file_offset": 29044,
+        "before": 2147483647,
+        "after": 2147483645
+      },
+      {
+        "name": "libsensapi.so",
+        "file_offset": 29088,
+        "before": 2147483647,
+        "after": 2147483645
+      },
+      {
+        "name": "libUsbControl.so",
+        "file_offset": 29132,
+        "before": 4294967199,
+        "after": 4294967197
+      },
+      {
+        "name": "libBusPower.so",
+        "file_offset": 29176,
+        "before": 4294967199,
+        "after": 4294967197
+      },
+      {
+        "name": "libHotplug.so",
+        "file_offset": 29220,
+        "before": 4294967199,
+        "after": 4294967197
+      },
+      {
+        "name": "libTetheringResource.so",
+        "file_offset": 30892,
+        "before": 2147483647,
+        "after": 2147483645
+      },
+      {
+        "name": "libNetServiceTethering.so",
+        "file_offset": 30936,
+        "before": 2147483647,
+        "after": 2147483645
+      },
+      {
+        "name": "libInfraMediaPwrMgr.so",
+        "file_offset": 31156,
+        "before": 4294967199,
+        "after": 4294967197
+      }
+    ],
+    "retained": [
+      "appFw.so",
+      "libgrm.so",
+      "libuxengine.so"
+    ],
+    "destination_sha256": "b3bca8050d524ee9445f6ee2ae967d0e735e48471d908e178134daa20790cb4a"
+  },
+  "arm_build": {
+    "exit_code": 0,
+    "output": "",
+    "sha256": "7d3a4a5c10783b4777e31bb271172eeb8f03eda7be028f92e8bdcfbd08432d96",
+    "bytes": 58192
+  },
+  "host_c_tests": [
+    {
+      "test": "test-a7c-gemini-backend.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "PASS: native target/current context, original finish before writes, rect/solid/quad/A8, read lease lifetime, metadata stability, terminal rejection and cleanup\n"
+    },
+    {
+      "test": "test-a7c-gemini.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "PASS: original Gemini rect/quad affine, viewport/scissor, A8/RGBA4444, native blend/masks, atomic rejection, Morton-bottom-up present and bounds\n"
+    },
+    {
+      "test": "test-a7c-headless.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "PASS: native leases, all-record copy, exact completion, immutable capture and acknowledged recapture, page export and terminal failures\nTEST headless.committed_native_frame=0x1\nTEST headless.export_ready=0\nTEST headless.committed_native_frame=0x2\nTEST headless.export_ready=0x1\nTEST headless.committed_native_frame=0x3\nTEST headless.export_ready=0x1\nTEST headless.committed_native_frame=0x4\nTEST headless.export_ready=0x1\nTEST headless.committed_native_frame=0x5\nTEST headless.export_ready=0x1\nTEST headless.committed_native_frame=0x1\nTEST headless.export_ready=0x1\nTEST headless.error.transaction=0x4332c2d0\nTEST headless.error.transaction=0x4332c2d0\nTEST headless.error.layout_identity=0x41ee4000\nTEST headless.error.layout_identity=0x41ee4000\nTEST headless.error.read_lock=0xfffffffffffffff8\nTEST headless.error.pagemap_identity=0\nTEST headless.error.changed_identity=0x41ee4000\nTEST headless.error.layout_identity=0x41ee6000\nTEST headless.error.export_commit=0x1c\nTEST headless.error.pin=0xc\nTEST headless.committed_native_frame=0x1\nTEST headless.export_ready=0x1\nTEST headless.error.export_commit=0x1c\nTEST headless.error.transaction=0x4332c2f0\nTEST headless.error.pagemap_identity=0x40000000\n"
+    },
+    {
+      "test": "test-a7c-image-decode.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "SKIP: firmware-derived fixture evidence/gemini-assets/border-1a05cb40.lz77 is absent; extract it from your own firmware first\n"
+    },
+    {
+      "test": "test-a7c-input-command.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "PASS: exact UART command whitelist, lengths and embedded NUL rejection\n"
+    },
+    {
+      "test": "test-a7c-lz77.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "SKIP: firmware-derived fixture evidence/gemini-assets/border-1a05cb40.lz77 is absent; synthetic codec cases already passed\n"
+    },
+    {
+      "test": "test-a7c-present.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "PASS: full RGBA4444 Morton/flip present, exclusive-end clear, bounds, rejected fields, overlap and one-shot engine/thread completion\n"
+    },
+    {
+      "test": "test-a7c-raster.c",
+      "build_exit_code": 0,
+      "build_output": "",
+      "exit_code": 0,
+      "output": "PASS: ARM32 fill, clipping, alpha8 source-over, capacity and unsupported-layout checks\n"
+    }
+  ],
+  "host_c_tests_passed": true,
+  "source_sha256": {
+    "source/ui/ui-draw-probe.h": "c292c978c337cbdd66c69959a2879839090b502f7b788f9e5a56b36e18ab7180",
+    "source/ui/ui-font-probe.h": "97eb545bb9f624cb33beab4748e17ba6bc912123da5aca92294a183bf02660dd",
+    "source/ui/ui-gemini-backend.h": "9c5238ff29c4b655b14a6b8269a3fa18c4c20ceaef1b3418c7aa5395eb23d966",
+    "source/ui/ui-gemini-raster.h": "5df1af8cef8df6dfdb27d82a75626ee7a9d35c701a70b6b8132606d65c159620",
+    "source/ui/ui-headless.h": "4179c57972dc13e99e39e693057d2f433e37b5b9a1edafb3d35aa11c7a7fd837",
+    "source/ui/ui-image-decode.h": "216b97c3ef1cec38d35e3fd1343c4c6afe71d218ac3309f0cfe01327f492cdec",
+    "source/ui/ui-input-command.h": "639b872af77d4a9158b351d30f975ec317553ae033a6ae370b482c006874d77e",
+    "source/ui/ui-lz77.h": "142a1bc6412de39a00a1ff962ecef0a34c1ec70dbe7cf4cf7ebb9981f1adf7cc",
+    "source/ui/ui-observe.c": "d5bae2db758d65919c48a56cf51a4edc0686f97d496159f485841bb40c38d9f9",
+    "source/ui/ui-present.h": "592b2b38495746582a4162682f8b7473aee4005e23fa6c728544460ba33fc431",
+    "source/ui/ui-raster.h": "63bd23a6d3225b07634f64cab482d554e2056c5bfe7cbead2a3e0fa485c4885a",
+    "source/ui/ui-slow-clear.h": "5659cd85a27d1ffc2ede46dd171eb5395e8a8b840bd1788c037789a2958a7cee"
+  },
+  "offline_guard_tests": [
+    {
+      "test": "test-a7c-ui-profile.py",
+      "exit_code": 0,
+      "output": "\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\n----------------------------------------------------------------------\nRan 2 tests in 0.007s\n\n\u001b[32mOK\u001b[0m\n"
+    },
+    {
+      "test": "test-a7c-ui-relocation.py",
+      "exit_code": 0,
+      "output": "\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\u001b[32m.\u001b[0m\n----------------------------------------------------------------------\nRan 6 tests in 0.169s\n\n\u001b[32mOK\u001b[0m\n"
+    }
+  ],
+  "offline_guard_tests_passed": true,
+  "frozen_runtime_source_readback": {
+    "source/ui/ui-draw-probe.h": true,
+    "source/ui/ui-font-probe.h": true,
+    "source/ui/ui-gemini-backend.h": true,
+    "source/ui/ui-gemini-raster.h": true,
+    "source/ui/ui-headless.h": true,
+    "source/ui/ui-image-decode.h": true,
+    "source/ui/ui-input-command.h": true,
+    "source/ui/ui-lz77.h": true,
+    "source/ui/ui-observe.c": true,
+    "source/ui/ui-present.h": true,
+    "source/ui/ui-raster.h": true,
+    "source/ui/ui-slow-clear.h": true
+  },
+  "global_reference_pins": [
+    {
+      "name": "graphics",
+      "code_address": "0x63d230",
+      "code_bytes": "094c7c44206818b127f2f2fe",
+      "literal_address": "0x63d258",
+      "literal_word": "0xe1aac2",
+      "pc_base": "0x63d236",
+      "resolved": "0x1457cf8"
+    },
+    {
+      "name": "completion_callback",
+      "code_address": "0x6fb0b0",
+      "code_bytes": "084b7b441b681bb107487844",
+      "literal_address": "0x6fb0d4",
+      "literal_word": "0xd5dc3a",
+      "pc_base": "0x6fb0b6",
+      "resolved": "0x1458cf0"
+    },
+    {
+      "name": "completion_argument",
+      "code_address": "0x6fb0b8",
+      "code_bytes": "074878440068984780bd00bf",
+      "literal_address": "0x6fb0d8",
+      "literal_word": "0xd5dc2a",
+      "pc_base": "0x6fb0be",
+      "resolved": "0x1458ce8"
+    },
+    {
+      "name": "completion_semaphore",
+      "code_address": "0x6fb374",
+      "code_bytes": "19484ff0ff317844006812f6",
+      "literal_address": "0x6fb3dc",
+      "literal_word": "0xd5d976",
+      "pc_base": "0x6fb37e",
+      "resolved": "0x1458cf4"
+    },
+    {
+      "name": "DisplayManager",
+      "code_address": "0x6f50e8",
+      "code_bytes": "104c114b7c44e658336813f0010f0f4be55810d1",
+      "base_literal_address": "0x6f512c",
+      "base_literal_word": "0xcddc98",
+      "pc_base": "0x6f50f0",
+      "got_base": "0x13d2d88",
+      "offset_literal_address": "0x6f5134",
+      "got_offset": "0x88e4",
+      "got_slot": "0x13db66c",
+      "resolved": "0x1458220"
+    }
+  ],
+  "native_menu_additional_pins": {
+    "root_selector_factory": {
+      "address": "0x3ef9b8",
+      "bytes": "b0b54ff4c27000af0d4692f58ae929460446fff7d7fb2046b0bd204693f564ed",
+      "allocation_size": "0x184"
+    },
+    "root_selector_interface": {
+      "vptr": "0xb17f10",
+      "offset_to_top": "0xfffffeac",
+      "object_offset": "0x154"
+    },
+    "reference_menu_precondition_setter": {
+      "address": "0x4a43a5",
+      "bytes": "034b044a7b4480b500af9b58187080bd98fe6d0040be0000",
+      "evidence": "16-byte setter shape and adjacency to independently exported getHalfShutterRelease at 0x4a43bd; opaque boolean identity not named here",
+      "withdrawn": true,
+      "runtime_call_removed_by_main": true,
+      "reason": "Opaque bool semantics/caller timing unproved; preserve native inhibit path."
+    },
+    "wifi_guard": {
+      "symbol": "_ZN27CmnForUseMultipleViewStatus10isWiFiModeEv",
+      "address": "0x4a4525",
+      "bytes": "034b044a7b4480b500af9b58187880bd18fd6d0000310000"
+    },
+    "input_callback": {
+      "symbol": "_ZN12InputService16callback_convertEiP16_InfraInputEvent",
+      "address": "0x11fc81",
+      "bytes": "80b500affff780ffbde88040ebf75cbf2de9f04f8bb05a4d00af08460c46eef7"
+    }
+  },
+  "mapping_methods": {
+    "scope": "Fixed per-entry A7M3 to A7C map; short masked signatures are discovery candidates, not standalone semantic/runtime proof.",
+    "named_code_anchors": [
+      "WidgetSystem::sys_getInstance",
+      "GRM_bitmapGetPhysicalAddress"
+    ],
+    "unexported_code": "Independent Thumb body/prefix and native caller/callee inspection; DMP initialize/exit also checked as paired wrappers before the independently matched fill/blit block.",
+    "data": "Six RTTI names, pViewManager export, and five separately derived PC/GOT references; no uniform BSS delta.",
+    "gl_finish": "Same prefix as glFlush; native +0xf2 BL to 0x7a6570 and wait=1 at 0x7a6592 distinguish finish.",
+    "views": "Root/RootSelector/STLREC RTTI and RootSelector factory; helper 0x42fa23 body compared with ZV-E10 0x47de27 because A7M3 helper has a different contract.",
+    "remaining": "Original AP main/menu pixel consumption, manager layout/lifecycle runtime use and complete hardware input route await the main VM integration; independent view-agent findings are not claimed by this file."
+  },
+  "host_c_test_scope": {
+    "compiled_programs": 8,
+    "program_exit_zero": 8,
+    "active_coverage_programs": 7,
+    "entire_program_fixture_skips": [
+      "test-a7c-image-decode.c"
+    ],
+    "fixture_skipped_groups": [
+      "native image decoder/write lease/events",
+      "native border/icon LZ77 byte comparison"
+    ],
+    "synthetic_lz77_before_fixture_skip": true,
+    "note": "host_c_tests_passed records return codes. It does not promote missing firmware fixtures or guest/UI behavior to passed."
+  },
+  "verification_layers": {
+    "source_fixed_map": true,
+    "static_original_elf": true,
+    "arm_shared_library_build": true,
+    "host_software_backend": true,
+    "original_ap_actual_consumption": false,
+    "physical_asic_compatibility": false
+  },
+  "sampler_fix": {
+    "host_tests": [
+      {
+        "test": "test-a7c-gemini.c",
+        "sanitizers": false,
+        "build_exit_code": 0,
+        "build_output": "",
+        "exit_code": 0,
+        "output": "PASS: original Gemini rect/quad affine, viewport/scissor, A8/RGBA4444, native blend/masks, atomic rejection, Morton-bottom-up present and bounds\n"
+      },
+      {
+        "test": "test-a7c-gemini.c",
+        "sanitizers": true,
+        "build_exit_code": 0,
+        "build_output": "",
+        "exit_code": 0,
+        "output": "PASS: original Gemini rect/quad affine, viewport/scissor, A8/RGBA4444, native blend/masks, atomic rejection, Morton-bottom-up present and bounds\n"
+      },
+      {
+        "test": "test-a7c-gemini-backend.c",
+        "sanitizers": false,
+        "build_exit_code": 0,
+        "build_output": "",
+        "exit_code": 0,
+        "output": "PASS: native target/current context, original finish before writes, rect/solid/quad/A8, read lease lifetime, metadata stability, terminal rejection and cleanup\n"
+      },
+      {
+        "test": "test-a7c-gemini-backend.c",
+        "sanitizers": true,
+        "build_exit_code": 0,
+        "build_output": "",
+        "exit_code": 0,
+        "output": "PASS: native target/current context, original finish before writes, rect/solid/quad/A8, read lease lifetime, metadata stability, terminal rejection and cleanup\n"
+      },
+      {
+        "test": "test-a7c-gemini-filter.c",
+        "sanitizers": false,
+        "build_exit_code": 0,
+        "build_output": "",
+        "exit_code": 0,
+        "output": "PASS: real bilinear RGBA/A8, min/mag, atlas neighbors, padding, clamp/mirror/repeat, actual 144->448 Morton geometry and atomic rejection\n"
+      },
+      {
+        "test": "test-a7c-gemini-filter.c",
+        "sanitizers": true,
+        "build_exit_code": 0,
+        "build_output": "",
+        "exit_code": 0,
+        "output": "PASS: real bilinear RGBA/A8, min/mag, atlas neighbors, padding, clamp/mirror/repeat, actual 144->448 Morton geometry and atomic rejection\n"
+      }
+    ],
+    "host_tests_passed": true,
+    "runtime_verified": false,
+    "source_sha256": {
+      "source/ui/ui-slow-clear.h": "5659cd85a27d1ffc2ede46dd171eb5395e8a8b840bd1788c037789a2958a7cee",
+      "source/ui/ui-observe.c": "8ab91356c6acd49a04be4e1a2c2df889110de3ae78ae69f96c49f6e124e8d446",
+      "source/ui/ui-gemini-backend.h": "d7f93c93ea6f1bc52ec4cd808e33769c32adc746e3e326be5ea0366a9359a82f",
+      "source/ui/ui-present.h": "592b2b38495746582a4162682f8b7473aee4005e23fa6c728544460ba33fc431",
+      "source/ui/ui-headless.h": "4179c57972dc13e99e39e693057d2f433e37b5b9a1edafb3d35aa11c7a7fd837",
+      "source/ui/ui-font-probe.h": "97eb545bb9f624cb33beab4748e17ba6bc912123da5aca92294a183bf02660dd",
+      "source/ui/ui-lz77.h": "142a1bc6412de39a00a1ff962ecef0a34c1ec70dbe7cf4cf7ebb9981f1adf7cc",
+      "source/ui/ui-draw-probe.h": "c292c978c337cbdd66c69959a2879839090b502f7b788f9e5a56b36e18ab7180",
+      "source/ui/ui-gemini-raster.h": "34bd1800378e8f9872c856c313803c3fc7c3218da9cae6a0c27d9c4e06b8b293",
+      "source/ui/ui-input-command.h": "639b872af77d4a9158b351d30f975ec317553ae033a6ae370b482c006874d77e",
+      "source/ui/ui-image-decode.h": "216b97c3ef1cec38d35e3fd1343c4c6afe71d218ac3309f0cfe01327f492cdec",
+      "source/ui/ui-raster.h": "63bd23a6d3225b07634f64cab482d554e2056c5bfe7cbead2a3e0fa485c4885a"
+    },
+    "arm_build": {
+      "exit_code": 0,
+      "output": "",
+      "bytes": 62684,
+      "sha256": "54d1feddb13ec1f9a14e81c069fc40c7cbf066212608ec8f04c58b032695e754"
+    },
+    "native_filter_evidence": {
+      "libObj_sha256": "a05b335ef505cc830d1f7fbead792eca4e77dbdb4e642d2225bd9983201ddfa8",
+      "tables": [
+        {
+          "name": "level_zero_filter",
+          "literal_address": "0x84bf4c",
+          "literal_word": "0x7d6d2c",
+          "pc_base": "0x84bf3c",
+          "table_address": "0x1022c68",
+          "table_bytes": "0026000001260000",
+          "values": [
+            "0x2600",
+            "0x2601"
+          ]
+        },
+        {
+          "name": "mip_filter",
+          "literal_address": "0x84bf88",
+          "literal_word": "0x7d6cac",
+          "pc_base": "0x84bf78",
+          "table_address": "0x1022c24",
+          "table_bytes": "00270000012700000227000003270000",
+          "values": [
+            "0x2700",
+            "0x2701",
+            "0x2702",
+            "0x2703"
+          ]
+        },
+        {
+          "name": "wrap",
+          "literal_address": "0x84bfc4",
+          "literal_word": "0x7d6c60",
+          "pc_base": "0x84bfb4",
+          "table_address": "0x1022c14",
+          "table_bytes": "2f81000070830000012900002f810000",
+          "values": [
+            "0x812f",
+            "0x8370",
+            "0x2901",
+            "0x812f"
+          ]
+        }
+      ],
+      "original_bodies": {
+        "0x84bf14": "012880b582b002af0bd98223084a00931020084b00217a447b44c3f4bee5002003e0054b7b4453f82000bd4680bd00bf",
+        "0x84bf8c": "032880b582b002af0bd9a023084a00931020084b00217a447b44c3f482e5002003e0054b7b4453f82000bd4680bd00bf",
+        "0x8492c4": "b0b505460c46084600af002103f0aefb20b92046022103f0a9fbf8b123682046db6c9847014628b9204603f0d7fb02f00ffe05e00221204603f0d0fb02f026fe024642f60101284674f7c0f92046002103f0a8fb2046022103f0a4fb2046012103f084fb78b10121204603f0b7fb02f0effd4ff420510246284674f7a7f92046012103f08ffb2046032103f06ffb78b10321204603f0a2fb02f016fe42f602010246284674f792f92046032103f07afb2046042103f05afb88b10421204603f08dfb02f001fe42f603010246284674f77df920460421bde8b04003f063bbb0bd",
+        "0x84caa0": "042980b582b002af0cdd4ff45473084a00931020074b00217a447b44c2f4f6e7002003e000eb410090f83400bd4680bd",
+        "0x84c132": "80b500af008b80bd",
+        "0x848260": "2de9f04f2ded068b87b0984602af04460b6808460d467a600021d7f850a0d3f8a430d7f854909847064650b9",
+        "0x84844c": "b9f900300bf14001b9f904200126baf9000007ee103ad318b9f9062007ee903ab9f90230b8eec76abaf9045005ee103ad3180bf1800205ee903a0bf1c003b8eee77a8bed006a8bed106af8eec56a8bed207a8bed307af8eee57acbed016ac1ed017ac2ed016a06ee900a2818baf90650c3ed017ab8eee67ad4ed1d7a05ee100abaf9020005ee900a281827ee276ab8eec57a05ee100a2046f8eee56af8eec55a27ee277ad4ed1e7a8bed076a81ed076a66eea76a82ed077a83ed077a65eea77acbed086ac1ed087ac2ed086ac3ed087a"
+      },
+      "abi": "Native RECT stack arg5=source Rect16 (UV), arg6=destination Rect16 (vertices); texture +0x18=max mip, params0/1=min/mag, params3/4=U/V wrap.",
+      "real_failure": {
+        "run": "output/20261106-224252",
+        "kind": 1,
+        "source_rect": [
+          28,
+          0,
+          144,
+          28
+        ],
+        "destination_rect": [
+          28,
+          0,
+          448,
+          28
+        ],
+        "filter_word": "0x00010001",
+        "original_failure_preserved": true
+      },
+      "implementation": "Actual four-texel bilinear with full allocation extent, original tint/blend, clamp/mirror/repeat and native finish/read lease/cleanup; max mip nonzero rejected.",
+      "physical_gpu_subnibble_rounding_verified": false
+    },
+    "source_readback_after_build": {
+      "source/ui/ui-slow-clear.h": true,
+      "source/ui/ui-observe.c": true,
+      "source/ui/ui-gemini-backend.h": true,
+      "source/ui/ui-present.h": true,
+      "source/ui/ui-headless.h": true,
+      "source/ui/ui-font-probe.h": true,
+      "source/ui/ui-lz77.h": true,
+      "source/ui/ui-draw-probe.h": true,
+      "source/ui/ui-gemini-raster.h": true,
+      "source/ui/ui-input-command.h": true,
+      "source/ui/ui-image-decode.h": true,
+      "source/ui/ui-raster.h": true
+    }
+  }
+}

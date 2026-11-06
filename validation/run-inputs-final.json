@@ -1,0 +1,97 @@
+{
+  "scope": "final main/MENU smoke and actual three-control Tk window acceptance",
+  "files": {
+    "start.sh": {
+      "bytes": 141,
+      "sha256": "361b888e45aebf6609ad3dd007a70bd7df4d47cedefc0de6e2a2a3c4a4628d0b"
+    },
+    "start-a7c-ui.sh": {
+      "bytes": 1606,
+      "sha256": "f232c2b9c72273e68a0b6a3c07434aa30bb0fdd2f3c4e5e578fe4db33d821980"
+    },
+    "scripts/camera.py": {
+      "bytes": 14317,
+      "sha256": "4be2ff53dcece25f25e1b8585e954adebf99b70bd7255a9af6190c39be9f6813"
+    },
+    "scripts/relocate-ui.py": {
+      "bytes": 13079,
+      "sha256": "cf2f870849a517f5bd48fa96047c269ab98d07c2bc9a419a1f0358e0601f6638"
+    },
+    "scripts/prepare-ui-profile.py": {
+      "bytes": 3467,
+      "sha256": "3a735cd76039e270f84711526790179358d6ece2704098dc8a8ff27d4c6f1c27"
+    },
+    "work/qemu-src/build-a7c/qemu-system-arm": {
+      "bytes": 93991712,
+      "sha256": "97a04e44228807762fcfe259f1eddde44d4068edcf2bb733ceff85b57ea084fc"
+    },
+    "work/kbuild-ui/arch/arm/boot/Image": {
+      "bytes": 3679492,
+      "sha256": "b7e54a10ab460825b35c4908cb6d5a869555515c52947eed0b2487f52f96c944"
+    },
+    "work/initramfs-ui/usr/lib/libuiobserve.so": {
+      "bytes": 62684,
+      "sha256": "e05d5befa3d173828eec99a3720cd333cec6ab8638566a9319590b3ebaf5feff"
+    },
+    "work/initramfs-ui/usr/lib/libIMDB.so": {
+      "bytes": 36460,
+      "sha256": "b3bca8050d524ee9445f6ee2ae967d0e735e48471d908e178134daa20790cb4a"
+    },
+    "work/ui.cpio.gz": {
+      "bytes": 108869163,
+      "sha256": "83cb2ee7461a09a67d8eb8345400c2a04846f91d80611343fd5839e995ee470c"
+    },
+    "source/ui/PORTING.md": {
+      "bytes": 13082,
+      "sha256": "8a3bc1a450b6cb79df35c9b350f0c834f109e49264d15b8217bf454d24035862"
+    },
+    "source/ui/ui-draw-probe.h": {
+      "bytes": 2388,
+      "sha256": "c292c978c337cbdd66c69959a2879839090b502f7b788f9e5a56b36e18ab7180"
+    },
+    "source/ui/ui-font-probe.h": {
+      "bytes": 255,
+      "sha256": "97eb545bb9f624cb33beab4748e17ba6bc912123da5aca92294a183bf02660dd"
+    },
+    "source/ui/ui-gemini-backend.h": {
+      "bytes": 14574,
+      "sha256": "d7f93c93ea6f1bc52ec4cd808e33769c32adc746e3e326be5ea0366a9359a82f"
+    },
+    "source/ui/ui-gemini-raster.h": {
+      "bytes": 13629,
+      "sha256": "34bd1800378e8f9872c856c313803c3fc7c3218da9cae6a0c27d9c4e06b8b293"
+    },
+    "source/ui/ui-headless.h": {
+      "bytes": 13987,
+      "sha256": "4179c57972dc13e99e39e693057d2f433e37b5b9a1edafb3d35aa11c7a7fd837"
+    },
+    "source/ui/ui-image-decode.h": {
+      "bytes": 4516,
+      "sha256": "216b97c3ef1cec38d35e3fd1343c4c6afe71d218ac3309f0cfe01327f492cdec"
+    },
+    "source/ui/ui-input-command.h": {
+      "bytes": 517,
+      "sha256": "639b872af77d4a9158b351d30f975ec317553ae033a6ae370b482c006874d77e"
+    },
+    "source/ui/ui-lz77.h": {
+      "bytes": 3410,
+      "sha256": "142a1bc6412de39a00a1ff962ecef0a34c1ec70dbe7cf4cf7ebb9981f1adf7cc"
+    },
+    "source/ui/ui-observe.c": {
+      "bytes": 19263,
+      "sha256": "0a0a891595e698325d899a226db0ccc195a8b37138fe85312cdf4e7dba5ad017"
+    },
+    "source/ui/ui-present.h": {
+      "bytes": 2623,
+      "sha256": "f9bff3cb3ca718b0c513d279ac3fe87636d2e191d8bb5872dfbd35defa3f3ab8"
+    },
+    "source/ui/ui-raster.h": {
+      "bytes": 5145,
+      "sha256": "63bd23a6d3225b07634f64cab482d554e2056c5bfe7cbead2a3e0fa485c4885a"
+    },
+    "source/ui/ui-slow-clear.h": {
+      "bytes": 2797,
+      "sha256": "5659cd85a27d1ffc2ede46dd171eb5395e8a8b840bd1788c037789a2958a7cee"
+    }
+  }
+}

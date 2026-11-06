@@ -1,0 +1,362 @@
+{
+  "status": "static A7C ELF/native-reference/prologue/trampoline checks passed",
+  "runtime_verified": false,
+  "original_main_verified": false,
+  "original_menu_verified": false,
+  "capture_verified": false,
+  "sha256": {
+    "libObj.so": "a05b335ef505cc830d1f7fbead792eca4e77dbdb4e642d2225bd9983201ddfa8",
+    "viewUnified2.so": "236532d4434ceaf5b575aca284fbdca99c8bb4cf2eea638c3f2064feb3182d77",
+    "libIMDB.so": "51a724171774d443504ca08d25c6e2d329450cc4b1002b3b13b06711d1263516"
+  },
+  "code_entries": 33,
+  "data_entries": 12,
+  "view_entries": 6,
+  "reference_checked": false,
+  "numeric_navigation": {
+    "root": {
+      "id": "0x9c",
+      "registration_immediate": "0x4173f2"
+    },
+    "stlrec": {
+      "id": "0xbf",
+      "registration_immediate": "0x417c58"
+    },
+    "base_menu": {
+      "id": "0x11",
+      "registration_immediate": "0x41692a"
+    },
+    "global_menu": {
+      "id": "0x58",
+      "registration_immediate": "0x416eb6"
+    },
+    "setting_menu": {
+      "id": "0xb6",
+      "registration_immediate": "0x4175fa"
+    }
+  },
+  "input_keys": {
+    "enter": {
+      "physical_key": "0x1ac",
+      "mapping_row": "0xb9e150",
+      "base": "0x15010040"
+    },
+    "menu": {
+      "physical_key": "0x1ab",
+      "mapping_row": "0xb9e3fc",
+      "base": "0x150100f0"
+    },
+    "disp": {
+      "physical_key": "0x1f9",
+      "mapping_row": "0xb9e48c",
+      "base": "0x15010180"
+    },
+    "down": {
+      "physical_key": "0x30",
+      "mapping_row": "0xb9df38",
+      "base": "0x15010060"
+    }
+  },
+  "map": {
+    "0x2839a4": "0x3ef9b8",
+    "0x2bcfe1": "0x42fa23",
+    "0x5e5dc0": "0x617024",
+    "0x5e8490": "0x6196f8",
+    "0x60ec64": "0x63e1b0",
+    "0x6158e1": "0x644e31",
+    "0x64f9b9": "0x684e65",
+    "0x667f25": "0x69b295",
+    "0x668589": "0x69b8f9",
+    "0x669dcd": "0x69d13d",
+    "0x6badbb": "0x6f6dcb",
+    "0x6bf07d": "0x6fb08d",
+    "0x6bf350": "0x6fb360",
+    "0x73a100": "0x774ff0",
+    "0x73a330": "0x775220",
+    "0x73a470": "0x775360",
+    "0x73bce0": "0x776bd0",
+    "0x755a71": "0x791f91",
+    "0x77f711": "0x7bbc31",
+    "0x77f721": "0x7bbc41",
+    "0x77f7c1": "0x7bbce1",
+    "0x77f801": "0x7bbd21",
+    "0x784911": "0x7c0e31",
+    "0x78d780": "0x7c9ca0",
+    "0x799790": "0x7d5cb0",
+    "0x7997b0": "0x7d5cd0",
+    "0x7997d0": "0x7d5cf0",
+    "0x799860": "0x7d5d80",
+    "0x80a758": "0x847f78",
+    "0x80aa40": "0x848260",
+    "0x80ad58": "0x848578",
+    "0x80aedc": "0x8486fc",
+    "0x825349": "0x862b69",
+    "0x826169": "0x863989",
+    "0x82617b": "0x86399b",
+    "0x878328": "0xb128f8",
+    "0x87ba90": "0xb160c0",
+    "0x87d738": "0xb17ce0",
+    "0x87d930": "0xb17f10",
+    "0x124e600": "0x13b5700",
+    "0x124f9b0": "0x13b6f40",
+    "0x1252f90": "0x13ba2b0",
+    "0x1253120": "0x13ba440",
+    "0x1253398": "0x13ba6b8",
+    "0x12537f8": "0x13bab18",
+    "0x12f3394": "0x1457cf8",
+    "0x12f38b8": "0x1458220",
+    "0x12f4380": "0x1458ce8",
+    "0x12f4388": "0x1458cf0",
+    "0x12f438c": "0x1458cf4",
+    "0x13289f4": "0x148d34c"
+  },
+  "native_references": [
+    {
+      "name": "graphics",
+      "actual": "0x1457cf8",
+      "expected": "0x1457cf8"
+    },
+    {
+      "name": "DisplayManager",
+      "actual": "0x1458220",
+      "expected": "0x1458220"
+    },
+    {
+      "name": "completion_callback",
+      "actual": "0x1458cf0",
+      "expected": "0x1458cf0"
+    },
+    {
+      "name": "completion_argument",
+      "actual": "0x1458ce8",
+      "expected": "0x1458ce8"
+    },
+    {
+      "name": "completion_semaphore",
+      "actual": "0x1458cf4",
+      "expected": "0x1458cf4"
+    },
+    {
+      "name": "Bitmap.read",
+      "actual": "0x69b8f9",
+      "expected": "0x69b8f9"
+    },
+    {
+      "name": "Bitmap.unlock",
+      "actual": "0x69b295",
+      "expected": "0x69b295"
+    }
+  ],
+  "rtti": {
+    "0x13b5700": "N3grm3bmp10BitmapImplE",
+    "0x13b6f40": "N9dmpNative10WindowImplE",
+    "0x13ba2b0": "N6gemini19PlaneTextureMusashiE",
+    "0x13ba440": "N6gemini30GraphicsContext3DShaderMusashiE",
+    "0x13ba6b8": "N6gemini24GraphicsContext3DMusashiE",
+    "0x13bab18": "N6gemini15RenderTargetOGLE"
+  },
+  "root_menu_subobject": "0x154",
+  "hooks": [
+    {
+      "address": "0x6196f8",
+      "replacement": "observe_draw",
+      "prologue": "b0b5044682b000af",
+      "copies_to_trampoline": true,
+      "instructions": [
+        "push {r4, r5, r7, lr}",
+        "mov r4, r0",
+        "sub sp, #8",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x7d5cb0",
+      "replacement": "software_init",
+      "prologue": "034880b4784400af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "ldr r0, [pc, #0xc]",
+        "push {r7}",
+        "add r0, pc",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x7d5cd0",
+      "replacement": "software_exit",
+      "prologue": "034880b4784400af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "ldr r0, [pc, #0xc]",
+        "push {r7}",
+        "add r0, pc",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x7d5cf0",
+      "replacement": "software_fill",
+      "prologue": "02290b46f0b585b0",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "cmp r1, #2",
+        "mov r3, r1",
+        "push {r4, r5, r6, r7, lr}",
+        "sub sp, #0x14"
+      ]
+    },
+    {
+      "address": "0x7d5d80",
+      "replacement": "software_blit",
+      "prologue": "02290b46f0b585b0",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "cmp r1, #2",
+        "mov r3, r1",
+        "push {r4, r5, r6, r7, lr}",
+        "sub sp, #0x14"
+      ]
+    },
+    {
+      "address": "0x774ff0",
+      "replacement": "software_present",
+      "prologue": "2de9f04184b00546",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, lr}",
+        "sub sp, #0x10",
+        "mov r5, r0"
+      ]
+    },
+    {
+      "address": "0x775220",
+      "replacement": "software_engine_wait",
+      "prologue": "f0b583b0441e00af",
+      "copies_to_trampoline": true,
+      "instructions": [
+        "push {r4, r5, r6, r7, lr}",
+        "sub sp, #0xc",
+        "subs r4, r0, #1",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x6fb360",
+      "replacement": "software_headless_update",
+      "prologue": "b0b50c4686b01c49",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push {r4, r5, r7, lr}",
+        "mov r4, r1",
+        "sub sp, #0x18",
+        "ldr r1, [pc, #0x70]"
+      ]
+    },
+    {
+      "address": "0x63e1b0",
+      "replacement": "software_lz_decode",
+      "prologue": "2de9f04f8db000af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "sub sp, #0x34",
+        "add r7, sp, #0"
+      ]
+    },
+    {
+      "address": "0x848578",
+      "replacement": "(void *)gemini_probe_solid",
+      "prologue": "2de9f0472ded048b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, lr}",
+        "vpush {d8, d9}"
+      ]
+    },
+    {
+      "address": "0x848260",
+      "replacement": "(void *)gemini_probe_rect",
+      "prologue": "2de9f04f2ded068b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "vpush {d8, d9, d10}"
+      ]
+    },
+    {
+      "address": "0x847f78",
+      "replacement": "(void *)gemini_probe_quad",
+      "prologue": "2de9f04f2ded068b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "vpush {d8, d9, d10}"
+      ]
+    },
+    {
+      "address": "0x8486fc",
+      "replacement": "(void *)gemini_probe_line",
+      "prologue": "2de9f04f83b002af",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "sub sp, #0xc",
+        "add r7, sp, #8"
+      ]
+    },
+    {
+      "address": "0x7c9ca0",
+      "replacement": "software_slow_clear",
+      "prologue": "2de9f04f2ded028b",
+      "copies_to_trampoline": false,
+      "instructions": [
+        "push.w {r4, r5, r6, r7, r8, sb, sl, fp, lr}",
+        "vpush {d8}"
+      ]
+    }
+  ],
+  "callable_prefixes": {
+    "0x617024": "034b044a7b4480b500af9b58186880bd",
+    "0x6196f8": "b0b5044682b000af23f052fe27f0feff",
+    "0x7d5cb0": "034880b4784400afbd4680bc02f0b8b8",
+    "0x7d5cd0": "034880b4784400afbd4680bc02f0c0ba",
+    "0x7d5cf0": "02290b46f0b585b0144604af00d82ab9",
+    "0x7d5d80": "02290b46f0b585b0144604af00d82ab9",
+    "0x774ff0": "2de9f04184b0054604af036b1f2b02d9",
+    "0x775220": "f0b583b0441e00af072c09d8dfe804f0",
+    "0x775360": "2de9f04f87b0c64d04af044603687d44",
+    "0x776bd0": "2de9f041a0b0834c00af38467c44fff7",
+    "0x6fb360": "b0b50c4686b01c4900af0a4605463846",
+    "0x63e1b0": "2de9f04f8db000af0546fff7f5ff6e49",
+    "0x848578": "2de9f0472ded048b82b002af92460022",
+    "0x848260": "2de9f04f2ded068b87b0984602af0446",
+    "0x847f78": "2de9f04f2ded068b87b0994602af0446",
+    "0x8486fc": "2de9f04f83b002af9246002204468b46",
+    "0x7c9ca0": "2de9f04f2ded028b9bb000afdff81ca6",
+    "0x69d13d": "002880b500af08dc0d484ff4b8720d49",
+    "0x684e65": "80b500af18f028f8bde88040fff794be",
+    "0x69b8f9": "2de9f04383b000f1240600af04460d46",
+    "0x69b295": "b0b5044600f1240500af28466ef6dee2",
+    "0x6f6dcb": "80b500afbde88040fff7a9bf80b582b0",
+    "0x6fb08d": "0d4880b57844006800af13f66ae648b1",
+    "0x7bbc31": "80b400afbd4680bcd5f7fabcaff30080",
+    "0x7bbc41": "104bb0b5044600af7b440cb9b0bd00bf",
+    "0x7bbce1": "80b400af20b9bd4680bc7047aff30080",
+    "0x7bbd21": "80b400af20b9bd4680bc7047aff30080",
+    "0x7c0e31": "2de9f04100affaf7fbfe644d7d440446",
+    "0x791f91": "00f5de614ff0013290b401f1100300af",
+    "0x862b69": "80b500affff7c8ff08b190f9040080bd",
+    "0x863989": "026898b50b46546a00af02210022a047",
+    "0x86399b": "036880b500af9b6a984780bd0000044b",
+    "0x644e31": "2de9f04184b002af154606460c460846"
+  },
+  "menu_helper": {
+    "address": "0x42fa23",
+    "bytes": "b0b582b000af054638460c4654f54cea3846002140f24b6255f52ee888b1fff7cbff2b6828b1d3f89030284640f2825104e0d3f89030284640f645210122984705e024b92b68284611219b699847384654f5b6e907f10807bd46b0bd"
+  },
+  "rm_trampoline": {
+    "address": "0x775360",
+    "literal": "0xc5da16",
+    "bytes": "2de9f04f87b0034d04af0446dff800f06d53770016dac500"
+  }
+}

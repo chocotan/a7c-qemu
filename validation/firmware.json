@@ -1,0 +1,2313 @@
+{
+  "schema": 1,
+  "scope": "ILCE-7C 2.03 update extraction, immutable identity, static ARM ELF/import survey; no QEMU or camera runtime acceptance",
+  "firmware": {
+    "camera": "ILCE-7C",
+    "version": "2.03",
+    "model": "0x91030019",
+    "crypter": "CXD90045",
+    "update_size": 367091632,
+    "update_sha256": "e382c3deecb8d0fe8463a2451ddbfa897cd131a1797170d05936fabc4ffaf6f8",
+    "dat_size": 363197944,
+    "dat_sha256": "b5c20ed18b656d22611aa0ee0c83c168bd247030dc7bcf249bdb60d1168c3f39",
+    "cab": {
+      "offset": 465440,
+      "size": 366615519,
+      "sha256": "58b7d77dd10402de37cae26efe56e539bc009084366ef11b95ca7abec5e26428"
+    },
+    "internal_identity": {
+      "dat": {
+        "crypterName": "CXD90045",
+        "isLens": false,
+        "normalUsbDescriptors": [
+          [
+            1356,
+            1096
+          ],
+          [
+            1356,
+            1149
+          ],
+          [
+            1356,
+            3070
+          ],
+          [
+            1356,
+            3071
+          ],
+          [
+            1356,
+            3073
+          ],
+          [
+            1356,
+            3074
+          ],
+          [
+            1356,
+            3239
+          ],
+          [
+            1356,
+            3240
+          ],
+          [
+            1356,
+            3054
+          ],
+          [
+            1356,
+            3055
+          ],
+          [
+            1356,
+            3273
+          ],
+          [
+            1356,
+            3274
+          ],
+          [
+            1356,
+            3091
+          ],
+          [
+            1356,
+            3092
+          ],
+          [
+            1356,
+            3341
+          ],
+          [
+            1356,
+            3342
+          ],
+          [
+            1356,
+            3345
+          ],
+          [
+            1356,
+            3346
+          ],
+          [
+            1356,
+            3368
+          ],
+          [
+            1356,
+            3369
+          ]
+        ],
+        "updaterUsbDescriptors": [
+          [
+            1356,
+            994
+          ]
+        ]
+      },
+      "fdat": {
+        "isAccessory": false,
+        "model": 2432892953,
+        "region": 0,
+        "version": "2.03"
+      }
+    },
+    "backup_template": "0110_backup/SYSASTRA-DSLR/NB/CX88600_ALLLANG.bin",
+    "backup_sha256": "446ba0c6b36c5fe99cc4d2b0e1b03461ca3d40d8c3b2e3121fae506875258ccf",
+    "backup_selection_evidence": "0110_backup/MainDest.txt = SYSASTRA-DSLR / NB / CX88600_UC2.bin; same model stem ALLLANG selected"
+  },
+  "extraction": {
+    "passed": true,
+    "actual_manifest": "work/firmware-manifest.json",
+    "full_script_replay": "work/firmware-replay-v2/firmware-manifest.json",
+    "script": "scripts/prepare-firmware.py",
+    "script_sha256": "09acbe74d7d3574dd4921345a3222e839dc4d4c4b85e95779b21de9465bdbce8",
+    "fwtool_commit": "72fbdd15ddcc2d2a24ccb52cf8e84b8de98c738a",
+    "fwtool_local": "work/fwtool/fwtool.py",
+    "fwtool_python_used": "../a7m3-qemu/work/fwtool-venv/bin/python",
+    "fwtool_python_symlink_resolution_forbidden": true,
+    "original_images_unchanged": true,
+    "images": {
+      "nflasha7": {
+        "size": 5132288,
+        "sha256": "0b05aeba3f137c6f736cf7fddd6371e6496c1b1d11237f84c7f540d5d4a84422",
+        "e2fsck_returncode": 0
+      },
+      "nflasha15": {
+        "size": 243140608,
+        "sha256": "d105d9e95f8d5a2ffa7df76a3da2fc894c2e33946b3ff3cfed66110794e72fbc",
+        "e2fsck_returncode": 0
+      },
+      "nflasha3": {
+        "size": 30292992,
+        "sha256": "d9f4e1f3e18e571c5d263c3e4cf88fe4ab81168300bf4621d6c9f2df91ec2708"
+      }
+    },
+    "reference_trees": {
+      "rootfs": {
+        "entries": 624,
+        "files": 136,
+        "directories": 35,
+        "symlinks": 86,
+        "devices": 365,
+        "fifos": 2,
+        "tree_sha256": "8cdb94d25392ac85e3c60c7839c73e51235a9f2b7fce15a34543ae19281a3e8b"
+      },
+      "usr": {
+        "entries": 1024,
+        "files": 910,
+        "directories": 41,
+        "symlinks": 73,
+        "devices": 0,
+        "fifos": 0,
+        "tree_sha256": "510554f36a99c905e24e9741a2b02d5b9d8b194bc9eebbd5b2d61fea58f08ee7"
+      },
+      "boot": {
+        "entries": 17,
+        "files": 15,
+        "directories": 2,
+        "symlinks": 0,
+        "devices": 0,
+        "fifos": 0,
+        "tree_sha256": "9a29ef6d0df6a2e3aad4b011548ca4e5aad391e45b06e74659db33891f8ee9dc"
+      }
+    },
+    "actual_asset_full_readback": {
+      "all_five_trees_equal_to_full_replay": true,
+      "checks": [
+        "full inventory",
+        "regular file size and SHA256",
+        "symlink target",
+        "inode type and permissions",
+        "uid/gid under separate saved fakeroot states",
+        "all device major/minor numbers"
+      ],
+      "directory_mtime_compared": false,
+      "current_inventory": "firmware-live-tree-readback.json",
+      "replay_inventory": "firmware-replay-v2-tree-readback.json",
+      "full_replay": "firmware-replay-v2/firmware-manifest.json"
+    },
+    "item_count_basis": {
+      "five_tree_item_counts": "includes each filesystem root directory",
+      "reference_trees_ext2": "includes the root inode",
+      "reference_trees_fat": "FAT directory entries only; excludes the root directory"
+    },
+    "five_tree_item_counts": {
+      "rootfs": 624,
+      "usr": 1024,
+      "boot": 18,
+      "setting": 8,
+      "tmp": 12
+    },
+    "original_device_nodes": 365,
+    "original_fifos": 2,
+    "saved_node_metadata": "work/fakeroot-extract.state",
+    "saved_node_metadata_sha256": "fd5811e44c48af55e7db18e09f0dcf63d36f062875dee55e92f92f9a45f66ee6",
+    "original_tmp_mtab_link": "../proc/mounts",
+    "tar_regular_files_verified": 135,
+    "logs": "work/firmware-replay-v2/firmware-logs/",
+    "directory_mtime_readback_compared": false
+  },
+  "kernel": {
+    "version": "3.0.27_nl-rt106+",
+    "vermagic": "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 ",
+    "banner": "Linux version 3.0.27_nl-rt106+ (jp10239@dic-build-scm-u20-016) (gcc version 4.5.1 (20220614 (Sony CE Linux 8.2.7.6)) ) #1 SMP PREEMPT RT Sat Jan 31 03:18:22 JST 2026",
+    "ikconfig_embedded": false,
+    "published_source_archive": "sources/sony-ilce7c-ver203/linux-kernel.tar.gz",
+    "published_source_sha256": "477dfb9c17aa585dc5713331ff22a43b508e3fc6a247b2458503b9c4672eaf7c",
+    "published_config_sha256": "3f849684347369876ebbfba708e5e490b95874b57d7d8d77233252cdd11f9f89",
+    "published_config": {
+      "CONFIG_ARM": "y",
+      "CONFIG_ARCH_CXD900X0": "y",
+      "CONFIG_ARCH_CXD900X0BASED": "y",
+      "CONFIG_CXD900X0_SIZE_DDR0": "0x40000000",
+      "CONFIG_CXD900X0_SIZE_DDR1": "0x10000000",
+      "CONFIG_CXD900X0_TEXT_OFFSET": "0x00108000",
+      "CONFIG_CXD900X0_DEBUG_UART0": "y",
+      "CONFIG_CXD900X0_DEBUG_UART_NO": "0",
+      "CONFIG_CPU_V7": "y",
+      "CONFIG_SMP": "y",
+      "CONFIG_NR_CPUS": "4",
+      "CONFIG_PREEMPT": "y",
+      "CONFIG_PREEMPT_RT_BASE": "y",
+      "CONFIG_PREEMPT_RT_FULL": "y",
+      "CONFIG_AEABI": "y",
+      "CONFIG_CMDLINE": "\"\"",
+      "CONFIG_CMDLINE_PHYS_OFFSET_ENABLE": "y",
+      "CONFIG_CMDLINE_PHYS_OFFSET": "0x00103000",
+      "CONFIG_VFP": "y",
+      "CONFIG_VFPv3": "y",
+      "CONFIG_VFPD16": "y"
+    },
+    "published_machine_ids": [
+      {
+        "name": "ne1",
+        "config": "MACH_NE1",
+        "macro": "NE1",
+        "id": 1655
+      },
+      {
+        "name": "cxd4132",
+        "config": "ARCH_CXD4132",
+        "macro": "CXD4132",
+        "id": 3495
+      },
+      {
+        "name": "cxd90014",
+        "config": "ARCH_CXD90014",
+        "macro": "CXD90014",
+        "id": 3496
+      },
+      {
+        "name": "cxd900x0",
+        "config": "ARCH_CXD900X0",
+        "macro": "CXD900X0",
+        "id": 3497
+      }
+    ],
+    "source_board_declaration": "MACHINE_START(CXD900X0, \"ARM-CXD900X0\")",
+    "source_boot_machine_id": "MACH_TYPE_CXD900X0 (3497)",
+    "source_board_declaration_verified": true,
+    "source_boot_machine_id_verified": true,
+    "config_limit": "Published .config is checked against its archive; original kernel has no IKCFG_ST. Exact configuration of the shipped binary is not independently recovered.",
+    "original_initrd_type": "ext2",
+    "modules": [
+      {
+        "path": "rootfs/kmod/devno.ko",
+        "sha256": "273db657a8e2c9c8752b0ace56817357ddea38285a52b5cb7007a3fcf9df33c1",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "rootfs/kmod/dmac.ko",
+        "sha256": "718284caacf31654151fac234db7293d8338e348687c37b6e3f65dbf24de1522",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "rootfs/kmod/emmc.ko",
+        "sha256": "82c30dadd1dc212af62479c90931570c543a977243b2e7fa67d984598709fe82",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "rootfs/kmod/ldec.ko",
+        "sha256": "f3bd79f647ef9d0eda3a11a6c63b42a0fd30eb62d9af32fedaee1e41f133951a",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "rootfs/kmod/lld.ko",
+        "sha256": "7caa6355a3c3c46797a558361f358cb68a7d809378a0c89eb516f52a87a6241a",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "rootfs/kmod/nand.ko",
+        "sha256": "d0e83e73bea55a92d79671f433dd3fcef04c0a25288fc780c1a1e685fb77e78f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/accel.ko",
+        "sha256": "7d3ded0637b7096a7add11e3fc9053a029bfbb1511388a1c17f9bbe3183d0dee",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/asix.ko",
+        "sha256": "4b65f2ad159b0423ae1b14e638cb315eacc52a09ea44e8a4763d9d6c212fbcd1",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/backup.ko",
+        "sha256": "3c1b1080cd7b83e8f139c45c7066ae8efa804352180820fa1fdd2e37ff9f049c",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/bcmdhd.ko",
+        "sha256": "bb3522abe11ec8cd73fa44ed058bf73485f62fe782a1246ec7b3743310c1ac30",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/cdc-acm.ko",
+        "sha256": "a1bd37226adf0ded843634255f66c1ecd3bf2291c9e828e00e3b5dcb111d60d3",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/cdc_ether.ko",
+        "sha256": "e1c89f4a718dd2f52994abe35f32df5de6e5bff4265a2d95ce542d2fc79d8f62",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/cdc_ncm.ko",
+        "sha256": "7aeb4e6ccbdb06cc99cc152b929cc083be9a9210a7cc37a051c2c57009afde05",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/cdrom.ko",
+        "sha256": "fe141747ff7bd715adab6f00b7096177098cfd70cfc046f7b128e8916320eb2c",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/cec.ko",
+        "sha256": "35be3091f3dc78b19adf6e3fe2a7da784d194e322aeca24bb1236bc93ed6db64",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/cfg80211.ko",
+        "sha256": "536d8164d350e3fb0e2ccc271c27c447bcf472a355714100ee35dc0a0711662f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/codec_drv.ko",
+        "sha256": "86cb7ff8709c743876c77c190c0454a0ea944a68411d1f596465a3741006d06f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/compass.ko",
+        "sha256": "37000f1d43712a27a6b7d24444d127e42a2ed8b7a8074f9c7da3890e4aee92d3",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/compat.ko",
+        "sha256": "1431b304302120ad4289e0724c739e11affdb328a7a2ef15e619dcf031fe3d67",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/configfs.ko",
+        "sha256": "4a02c797fb3387bd7c9224baddb5b37b1597fc7dae8a7e3581b763b949c9984f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/crc-ccitt.ko",
+        "sha256": "9de4e5740d7bd9d8b4c4207b406cb692230eb99d8bb8c57206dab3e70fc0e63a",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/dma330.ko",
+        "sha256": "a86794fb8ab97fb27adac21bbcb067d424b787f3815d97bf91942b460dffd86d",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/dmm.ko",
+        "sha256": "9c32df85c8f5d5fe56fd7c4b930f1f8ee27085d1a3c2b313668765d846ab04ba",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/g_mass_storage.ko",
+        "sha256": "b1fdfa2ab145964d6437c6e479d09651bd1d0b7ab78cbb775924df5defe99050",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/grm_gles.ko",
+        "sha256": "4e4b99e5e17e170ddc13dc432178299512525debd6fb19512521b38867da7a65",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/grm_ma.ko",
+        "sha256": "c21479fea7b0bc081f72315c0b0b514b383a58b5a3bb5f2fefbfd26e20711879",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/hdmi.ko",
+        "sha256": "29166663298912b8daa6e6bdbb877d9654435bc17f9ae29575f5151a93e67da9",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/htmd.ko",
+        "sha256": "1f5b41969701fbefc10fce45e314f07bc8aa74a08d8c04fd02f0b52bc70e5370",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/i2c.ko",
+        "sha256": "37b37633a8cdfd6ce60258d646afc2cf11dc50de67cd71a0b53631584412321e",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/indctr.ko",
+        "sha256": "099bdaa47a82a37c2413c4cef62877471dcf382442aa6a7c6a09bf9c18585970",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/input.ko",
+        "sha256": "73fe0fc7aabd6ed0b5854c4f3e1ad127abd89dc722c6825641afa6ec92c2b2f5",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/kikilog.ko",
+        "sha256": "6aca6dbebaec409e578f77da8fd6a291b2c7551a8643d5e59bbb5e5164a3ae52",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/lg-vl600.ko",
+        "sha256": "d55ba794ff60ab7d4204786621e44fd0125ffc11044cd65edf43b93d61068326",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/lib80211_crypt_ccmp.ko",
+        "sha256": "ed93a9cf48e7b2ed6067c7ae7628a84185df5660cab37ba389d6cb7cec3e364f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/lib80211_crypt_tkip.ko",
+        "sha256": "91f479072c8d5dd054d0ea75be9ea8db2113b1a45b5dfc6d269bbec839fc8e0c",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/lib80211_crypt_wep.ko",
+        "sha256": "bd069ad2d53167adf095e35622ae2a30b23093ba1868973760a589c8fcc5019d",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/libcomposite.ko",
+        "sha256": "11808baf40d94111a8870a2d568012f9021c0690e70704c41cce001c1f7ae03b",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/liro.ko",
+        "sha256": "72b77031f00679877ac04edf452e9f49e5fbca05cb4ee4554ddd2e5243e8e0cc",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/mac80211.ko",
+        "sha256": "67d687cc85672bca97591230097cf6c6df224f1263677071e7257e564600d695",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/mag.ko",
+        "sha256": "a26f184df63a937da3dbfc482e4c9c62097b51f1a9922352b1cf89f2c38389c8",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/mcmn_drv.ko",
+        "sha256": "1ca5466b971ffd9b7521513c16bf11837e9687506afdc0894dea1ffdbe1b3469",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/mii.ko",
+        "sha256": "582d95f2220210546f3f23398d7c7dfd64e9980d38f227546623a421619bde2c",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/mmc_core.ko",
+        "sha256": "8b95ada5a164580a7aa26022455cf909032192cb6d030570f9aac4e488f8a4f6",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/mmc_drv.ko",
+        "sha256": "daf1a18de9060310e8c7b3cb3785b6f00c401fad195db9a581d6402968811ec6",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/mmcioWrapper.ko",
+        "sha256": "792ab282014176bbfaede6da9b0b1ccafd0dc44fc8d166ae4867b22395f9a707",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/ms_drv.ko",
+        "sha256": "b955014227415a2ccfa135f6d54f82eac4283de95a9da1bf5ee0f5387f2e0a3b",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/nfc.ko",
+        "sha256": "2cfd5fbe04929054d00307192728ac0b5cf39c093cc2e193872d9666e9297b97",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/nls_utf8.ko",
+        "sha256": "a26a9fbcdf71d4ae82f8a9dd1236cbaf047db39b8bd4ed63befdb8d8d8f18def",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/option.ko",
+        "sha256": "93db7c23fde3b2557d7450d3284247ab454911005d896cbe51b609be43f74304",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/osal_uipc.ko",
+        "sha256": "65e92b6f82d189d69d9275cafca8bab0ab07308cc485d41593ed42ab94033ce0",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/osal_ulogio.ko",
+        "sha256": "f725eb51fd24870a5da841aea2c73f6ca9d986a0915cb4a8fdabd85abab0e898",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/osal_utm.ko",
+        "sha256": "a5b6e5076f4ca1044fbe3f78105cd72ca93ab21724f1f7b42ad138ad4fc2a4c9",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/ppp_async.ko",
+        "sha256": "023f262f9d8c881c98d6556a5cd6e24e2287ebc3b3179bd45f6ab9ebf335a0cb",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/ppp_generic.ko",
+        "sha256": "6b1f8760d4567019200a53c9374fcd3efa64df102f8617f322258d388d884966",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/r8168.ko",
+        "sha256": "3c11ee78a8138303d8cd4038c8198db434399eea5390d85fff6e7eabaed07835",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/rndis_host.ko",
+        "sha256": "e4bf9d67808aa43eaab208dbc08a95a5c6e6039c8ef02cf049d7587e984614e2",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/scsi_mod.ko",
+        "sha256": "7cded6fdee7c6535823a13ed6666a8f85914579712e7c406c1bce41045184213",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/scsi_wait_scan.ko",
+        "sha256": "466fd07a3f430f9f0c52ca990bb528c3e089d26400ab9b8e85948e0fc927e4bb",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/sd_mod.ko",
+        "sha256": "aa01e23c999d9643fa299f11be6c02bcdb12c12ae373ab7e9493fdda7ad653be",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/sircs.ko",
+        "sha256": "28b6dbbe311765420633699a6d481ca318f01ecc344dc8cae875dbd02e6a599f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/slhc.ko",
+        "sha256": "adad6b875785e27308f964f24092d641f28924e291080d73608a29883014757c",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-aloop.ko",
+        "sha256": "dc7b2a9a2bfd2be164f718c71dc8616af0e091d6d40f50f5fbc86b724d464ab6",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-dummy.ko",
+        "sha256": "03b4fe2b001ba9fa0786a92e9aed6d2c90740ca9ba04dae7e5bdd447d176f24c",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-hwdep.ko",
+        "sha256": "c7094bbaf6951a716e5b5dbc847260f7f40ab2a365fe566ac36e22a3b9bb3a92",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-mixer-oss.ko",
+        "sha256": "385922b9dea87ff91e1872bbdcad00b26a0db5361bac3529227a51824b18fbfc",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-page-alloc.ko",
+        "sha256": "51986ed6a3291fcaa0b892287a6175cd4600e37243762e60d2cdb0d7827fff56",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-pcm-oss.ko",
+        "sha256": "b86df14bb236f5f3a2d04c9a2e970f18619ccc6f112d7493be60c813b8e43490",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-pcm.ko",
+        "sha256": "d133730c4b86801bf1693f728787015a2da231e22cd95ba248e9851e58366d0d",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-rawmidi.ko",
+        "sha256": "796dea51372fd3cff817f0399e10a609398ac56fb247b8d0d9946e3ff295027e",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-seq-device.ko",
+        "sha256": "24eb1c2bde5118595c2dff09e8aea1f347bbd3042cc163e10a55b81acc77144e",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-seq-dummy.ko",
+        "sha256": "568b027bb8657646dcc1d04f42a36adbfa253f3578c17c9b9441bea4558c6003",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-seq-midi-event.ko",
+        "sha256": "042e0e95e3af6d7c77022a41b70f5ad314ca5a6aa3f3925e116075b625063fe9",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-seq-midi.ko",
+        "sha256": "2facc20b0bc4cde0bef98633dac68e229c8f973bb637e6ce48934d853334dde1",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-seq-oss.ko",
+        "sha256": "f83bef730013da9f6949b6985324177a2fa2250a1af8afc0100d8b2a65668ad1",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-seq-virmidi.ko",
+        "sha256": "e0672b195dfe06190d4e9bc94031f5381aea0e0d4ffed9cecad40c8e049bb1d3",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-seq.ko",
+        "sha256": "9e03995403fc4f77f35d2bbd9323d71cf6312a440dfc85e81d5042d1f4d6a8a7",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-timer.ko",
+        "sha256": "bfdbd48f952b54baeea3cf29a849adb24a60d98d0856a9571a0ca2b4b582660f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-usb-audio.ko",
+        "sha256": "8de639ee6ce37cca408fc393e38db1363de4ab9617efc51e1f109c15fd9578d7",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-usbmidi-lib.ko",
+        "sha256": "dc316fcf4f500a5836da49a7e641f4486aaea75290ba254510e9eacbcd2d561f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd-virmidi.ko",
+        "sha256": "772f851a60d1f26e62815dbee37c61d4ffc79b730a2b4e7d5dc32774c93484a7",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/snd.ko",
+        "sha256": "b9a419ce7435c5bf3b5eb7ea3358a71ea866be63d906e4a7bb8171a78d4aedfc",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/soundcore.ko",
+        "sha256": "7751a9ad18ef789bf77f41fe57a49e0101f4ebbb1934a322e5a21173ee9c751f",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/sr_mod.ko",
+        "sha256": "081f1ecae6d76e91bf6bee3b8c4018653f7dad44cd92ad768138fe3479874029",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/stream.ko",
+        "sha256": "f4a92effffbe0638ecd5438dc98ebad35273eb881f19a912206392e27ce21c09",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/stream2.ko",
+        "sha256": "7e9b99bf4faa3c1bc975b6f169dc8dd15b3bc47894e7c59a4839ed4bdeea9aa2",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/udate.ko",
+        "sha256": "032635afbeb102086bc6f77b9cfb1401f11fe1b041fb62e56a8dc4ffab310b9b",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/upm.ko",
+        "sha256": "e48fd5bca9c841163bfb5288c3eae71d0d5188e271d9ecc90f7a53c6c854530d",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb-storage.ko",
+        "sha256": "63b5ae23d3bf02ef2e2306990fbde856a7e170562306f87d730b6b85d5feb06e",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb_buspwr.ko",
+        "sha256": "bfb9e1adc92decfa6666cf9ff81ce78aeac050ab9a1c30fcb9bc49a4c572a71a",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb_current.ko",
+        "sha256": "b4b616273b75d0af591014b0d6badb90f6393cf1d1dc915960ea46f638aa1eed",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb_darwin.ko",
+        "sha256": "35afa3fb951bfdd91a61445b9b032caeeb54cc2abf14be1a1410014bbaaa13a3",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb_extcmd.ko",
+        "sha256": "050ff3913e172f1b98365d88f27c37f0dcd40ed7a6ec014ee8ccc82fba01ad2b",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb_f_mass_storage.ko",
+        "sha256": "d76a0ee9143a37f3a4fae0475c42985ef2a457c54e800ee0cdcd2d7d65ce5313",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb_portMonitor.ko",
+        "sha256": "19148aae5bfe5f7889a36bf598e435abcb6d6c2fe99f376c6a3d546e1b2953e0",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usb_wwan.ko",
+        "sha256": "d9e39d8225666d05fc8b66e645274adbd53d1c9026bf645b6f04d8cd88e97b2e",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbcore.ko",
+        "sha256": "402559db4fe8d6818b0f1b1970a5c0c8bcb5f4c576840f174535f008da6bb011",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbg_audio.ko",
+        "sha256": "8f73572784aab15da291c9f311a945d4ec56d2dd4162218164bc2aa18cc5fae0",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbg_buspower.ko",
+        "sha256": "332ff52ac46876922ec51f0f01f4c5ebcf14daaac7bf3827946691de4841dac4",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbg_cmn.ko",
+        "sha256": "de01ea6de0593178012f83501b244d8b95350e0b20a5c7cf42f601ce70a27af7",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbg_sen.ko",
+        "sha256": "593fb09ca56311c35d85cf7a2ae017340c9b0ae7b9f267b3cb6b20d44e0807df",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbg_stillimage.ko",
+        "sha256": "f4386915995ebcc0104b5a18dae886d4a81b1b7ebb8e83148821a44de8d58fe6",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbg_storage.ko",
+        "sha256": "32475c0c91a46a2c2878227d676eab55a3847b4fcbe9b91daa0fe21a9558a9db",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbg_video.ko",
+        "sha256": "d385a051bf01b0e5ea37412623ae85cfe3cda76ab0d11e61d111994ca9fbf4fb",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbhid.ko",
+        "sha256": "8c1af141bd07bd4d39dfcfeb6c1ce1707ea4ff33fe82b0f96f6ace88ea83bdf5",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbnet.ko",
+        "sha256": "84645c5b2d802c5764f8a453c6214dfef0fabf176b646a47c821b0589150fc72",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/usbserial.ko",
+        "sha256": "4e507948883f2968cac556814e87db33ed514b3f7943b58f5a9a8d6da4e06982",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/utimer.ko",
+        "sha256": "fad635877d64376d4d90670f3788d93772cfcab8f60e5760fb6a9ee1d9235ca9",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/wlanIrq.ko",
+        "sha256": "66ac47bf407cdf6bb74713cb6393bf2753e33aa8d90d43813e78c336140bc323",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/wlanMemoryAllocator.ko",
+        "sha256": "f276f1fb635ac60be869d14167d9733e253a7c9b2a3d8c8a24c5ac4088d2ef39",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      },
+      {
+        "path": "usr/kmod/xhci-hcd.ko",
+        "sha256": "21c5c16dfa8cab2cf1c465e160950166bcae6ba99eeea8bb1e85d22550b62815",
+        "vermagic": [
+          "3.0.27_nl-rt106+ SMP preempt mod_unload ARMv7 "
+        ]
+      }
+    ]
+  },
+  "elf_survey": {
+    "architecture": "ARM32 little-endian EABI5",
+    "userspace_interpreter": "//lib/ld-linux.so.3",
+    "float_calling_convention": "Base AAPCS: sampled binaries have no EF_ARM_ABI_FLOAT_HARD or Tag_ABI_VFP_args register-passing tag; ARMv7/Thumb-2/VFPv3-D16 attributes are retained.",
+    "runtime_execution": false,
+    "files": [
+      {
+        "path": "rootfs/bin/busybox",
+        "size": 433504,
+        "sha256": "a10bf06b887e18bd3388836fa226e16cbe96138849131b2a4a075a7216e553c7",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_EXEC",
+        "entry": "0xf7c1",
+        "e_flags": "0x5000002",
+        "interpreter": "//lib/ld-linux.so.3",
+        "needed": [
+          "libcrypt.so.1",
+          "librt.so.1",
+          "libc.so.6"
+        ],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 336,
+        "import_categories": {
+          "crypto": {
+            "count": 1,
+            "examples": [
+              "crypt@GLIBC_2.4 (5)"
+            ]
+          },
+          "network": {
+            "count": 21,
+            "examples": [
+              "accept@GLIBC_2.4 (2)",
+              "bind@GLIBC_2.4 (2)",
+              "bindresvport@GLIBC_2.4 (2)",
+              "connect@GLIBC_2.4 (2)",
+              "freeaddrinfo@GLIBC_2.4 (2)",
+              "getaddrinfo@GLIBC_2.4 (2)",
+              "getsockname@GLIBC_2.4 (2)",
+              "inet_addr@GLIBC_2.4 (2)",
+              "inet_aton@GLIBC_2.4 (2)",
+              "inet_ntoa@GLIBC_2.4 (2)",
+              "inet_ntop@GLIBC_2.4 (2)",
+              "inet_pton@GLIBC_2.4 (2)",
+              "listen@GLIBC_2.4 (2)",
+              "recv@GLIBC_2.4 (2)",
+              "recvfrom@GLIBC_2.4 (2)",
+              "recvmsg@GLIBC_2.4 (2)",
+              "sendfile64@GLIBC_2.4 (2)",
+              "sendmsg@GLIBC_2.4 (2)",
+              "sendto@GLIBC_2.4 (2)",
+              "setsockopt@GLIBC_2.4 (2)",
+              "socket@GLIBC_2.4 (2)"
+            ]
+          },
+          "file_io": {
+            "count": 36,
+            "examples": [
+              "__fxstat64@GLIBC_2.4 (2)",
+              "__xstat64@GLIBC_2.4 (2)",
+              "access@GLIBC_2.4 (2)",
+              "chmod@GLIBC_2.4 (2)",
+              "chown@GLIBC_2.4 (2)",
+              "close@GLIBC_2.4 (2)",
+              "closedir@GLIBC_2.4 (2)",
+              "closelog@GLIBC_2.4 (2)",
+              "fclose@GLIBC_2.4 (2)",
+              "fcntl@GLIBC_2.4 (2)",
+              "fopen64@GLIBC_2.4 (2)",
+              "fread@GLIBC_2.4 (2)",
+              "fseeko64@GLIBC_2.4 (2)",
+              "fsync@GLIBC_2.4 (2)",
+              "fwrite@GLIBC_2.4 (2)",
+              "ioctl@GLIBC_2.4 (2)",
+              "lseek64@GLIBC_2.4 (2)",
+              "mkdir@GLIBC_2.4 (2)",
+              "mmap64@GLIBC_2.4 (2)",
+              "mount@GLIBC_2.4 (2)",
+              "munmap@GLIBC_2.4 (2)",
+              "open64@GLIBC_2.4 (2)",
+              "opendir@GLIBC_2.4 (2)",
+              "openlog@GLIBC_2.4 (2)"
+            ]
+          },
+          "process_threads": {
+            "count": 18,
+            "examples": [
+              "_exit@GLIBC_2.4 (2)",
+              "abort@GLIBC_2.4 (2)",
+              "daemon@GLIBC_2.4 (2)",
+              "execl@GLIBC_2.4 (2)",
+              "execle@GLIBC_2.4 (2)",
+              "execlp@GLIBC_2.4 (2)",
+              "execv@GLIBC_2.4 (2)",
+              "execve@GLIBC_2.4 (2)",
+              "execvp@GLIBC_2.4 (2)",
+              "exit@GLIBC_2.4 (2)",
+              "fork@GLIBC_2.4 (2)",
+              "kill@GLIBC_2.4 (2)",
+              "killpg@GLIBC_2.4 (2)",
+              "raise@GLIBC_2.4 (2)",
+              "system@GLIBC_2.4 (2)",
+              "vfork@GLIBC_2.4 (2)",
+              "wait@GLIBC_2.4 (2)",
+              "waitpid@GLIBC_2.4 (2)"
+            ]
+          },
+          "dynamic_loading": {
+            "count": 0,
+            "examples": []
+          },
+          "other": {
+            "count": 260,
+            "examples": [
+              "_Jv_RegisterClasses",
+              "__cmsg_nxthdr@GLIBC_2.4 (2)",
+              "__ctype_b_loc@GLIBC_2.4 (2)",
+              "__cxa_begin_cleanup",
+              "__cxa_call_unexpected",
+              "__cxa_type_match",
+              "__errno_location@GLIBC_2.4 (2)",
+              "__gmon_start__",
+              "__gnu_Unwind_Find_exidx@GLIBC_2.4 (2)",
+              "__h_errno_location@GLIBC_2.4 (2)",
+              "__libc_current_sigrtmax@GLIBC_2.4 (2)",
+              "__libc_current_sigrtmin@GLIBC_2.4 (2)",
+              "__libc_start_main@GLIBC_2.4 (2)",
+              "__lxstat64@GLIBC_2.4 (2)",
+              "__xmknod@GLIBC_2.4 (2)",
+              "_setjmp@GLIBC_2.4 (2)",
+              "acct@GLIBC_2.4 (2)",
+              "adjtimex@GLIBC_2.4 (2)",
+              "alarm@GLIBC_2.4 (2)",
+              "atof@GLIBC_2.4 (2)",
+              "atoi@GLIBC_2.4 (2)",
+              "authunix_create_default@GLIBC_2.4 (2)",
+              "bsearch@GLIBC_2.4 (2)",
+              "capget@GLIBC_2.4 (2)"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 8,
+        "defined_examples": [
+          "__environ@GLIBC_2.4 (2)",
+          "_environ@GLIBC_2.4 (2)",
+          "environ@GLIBC_2.4 (2)",
+          "optarg@GLIBC_2.4 (2)",
+          "optind@GLIBC_2.4 (2)",
+          "stderr@GLIBC_2.4 (2)",
+          "stdin@GLIBC_2.4 (2)",
+          "stdout@GLIBC_2.4 (2)"
+        ],
+        "evidence_id": "E-imports-00",
+        "raw_readelf": "work/firmware-survey/00-busybox-readelf.stdout",
+        "readelf_returncode": 0
+      },
+      {
+        "path": "rootfs/lib/ld-linux.so.3",
+        "size": 101736,
+        "sha256": "c37bf426bf64d644f0d0a428ab6e4366d31b232c96985de7bb20399a7fc5fecc",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_DYN",
+        "entry": "0x791",
+        "e_flags": "0x5000002",
+        "interpreter": null,
+        "needed": [],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_ABI_optimization_goals: Aggressive Speed",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 0,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 0,
+            "examples": []
+          },
+          "process_threads": {
+            "count": 0,
+            "examples": []
+          },
+          "dynamic_loading": {
+            "count": 0,
+            "examples": []
+          },
+          "other": {
+            "count": 0,
+            "examples": []
+          }
+        },
+        "defined_global_or_weak_count": 25,
+        "defined_examples": [
+          "GLIBC_2.4",
+          "GLIBC_PRIVATE",
+          "__libc_enable_secure@@GLIBC_PRIVATE",
+          "__libc_memalign@@GLIBC_2.4",
+          "__libc_stack_end@@GLIBC_2.4",
+          "__pointer_chk_guard@@GLIBC_PRIVATE",
+          "__stack_chk_guard@@GLIBC_2.4",
+          "__tls_get_addr@@GLIBC_2.4",
+          "_dl_allocate_tls@@GLIBC_PRIVATE",
+          "_dl_allocate_tls_init@@GLIBC_PRIVATE",
+          "_dl_argv@@GLIBC_PRIVATE",
+          "_dl_deallocate_tls@@GLIBC_PRIVATE",
+          "_dl_debug_state@@GLIBC_PRIVATE",
+          "_dl_get_tls_static_info@@GLIBC_PRIVATE",
+          "_dl_make_stack_executable@@GLIBC_PRIVATE",
+          "_dl_mcount@@GLIBC_2.4"
+        ],
+        "evidence_id": "E-imports-01",
+        "raw_readelf": "work/firmware-survey/01-ld-linux.so.3-readelf.stdout",
+        "readelf_returncode": 0
+      },
+      {
+        "path": "rootfs/lib/libc.so.6",
+        "size": 984292,
+        "sha256": "bc93700df79ac8f67356e4dbf5ab5c4c656865455e18ef2860acc178f5186bc2",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_DYN",
+        "entry": "0x1560d",
+        "e_flags": "0x5000002",
+        "interpreter": "//lib/ld-linux.so.3",
+        "needed": [
+          "ld-linux.so.3"
+        ],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 6,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 0,
+            "examples": []
+          },
+          "process_threads": {
+            "count": 0,
+            "examples": []
+          },
+          "dynamic_loading": {
+            "count": 0,
+            "examples": []
+          },
+          "other": {
+            "count": 6,
+            "examples": [
+              "__libc_enable_secure@GLIBC_PRIVATE (12)",
+              "__tls_get_addr@GLIBC_2.4 (13)",
+              "_dl_argv@GLIBC_PRIVATE (12)",
+              "_dl_starting_up",
+              "_rtld_global@GLIBC_PRIVATE (12)",
+              "_rtld_global_ro@GLIBC_PRIVATE (12)"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 2141,
+        "defined_examples": [
+          "GLIBC_2.10",
+          "GLIBC_2.11",
+          "GLIBC_2.12",
+          "GLIBC_2.4",
+          "GLIBC_2.5",
+          "GLIBC_2.6",
+          "GLIBC_2.7",
+          "GLIBC_2.8",
+          "GLIBC_2.9",
+          "GLIBC_PRIVATE",
+          "_Exit@@GLIBC_2.4",
+          "_IO_2_1_stderr_@@GLIBC_2.4",
+          "_IO_2_1_stdin_@@GLIBC_2.4",
+          "_IO_2_1_stdout_@@GLIBC_2.4",
+          "_IO_adjust_column@@GLIBC_2.4",
+          "_IO_adjust_wcolumn@@GLIBC_2.4"
+        ],
+        "evidence_id": "E-imports-02",
+        "raw_readelf": "work/firmware-survey/02-libc.so.6-readelf.stdout",
+        "readelf_returncode": 0
+      },
+      {
+        "path": "rootfs/kmod/devno.ko",
+        "size": 4368,
+        "sha256": "273db657a8e2c9c8752b0ace56817357ddea38285a52b5cb7007a3fcf9df33c1",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_REL",
+        "entry": "0x0",
+        "e_flags": "0x5000000",
+        "interpreter": null,
+        "needed": [],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_optimization_goals: Aggressive Size",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".symtab",
+        "import_count": 0,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 0,
+            "examples": []
+          },
+          "process_threads": {
+            "count": 0,
+            "examples": []
+          },
+          "dynamic_loading": {
+            "count": 0,
+            "examples": []
+          },
+          "other": {
+            "count": 0,
+            "examples": []
+          }
+        },
+        "defined_global_or_weak_count": 2,
+        "defined_examples": [
+          "__this_module",
+          "udif_devnodes"
+        ],
+        "evidence_id": "E-imports-03",
+        "raw_readelf": "work/firmware-survey/03-devno.ko-readelf.stdout",
+        "readelf_returncode": 0,
+        "symbol_table_limit": "Kernel relocatable module symbols; defined globals are not an audited __ksymtab export list."
+      },
+      {
+        "path": "usr/kmod/dma330.ko",
+        "size": 256544,
+        "sha256": "a86794fb8ab97fb27adac21bbcb067d424b787f3815d97bf91942b460dffd86d",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_REL",
+        "entry": "0x0",
+        "e_flags": "0x5000000",
+        "interpreter": null,
+        "needed": [],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_optimization_goals: Aggressive Size",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".symtab",
+        "import_count": 40,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 0,
+            "examples": []
+          },
+          "process_threads": {
+            "count": 0,
+            "examples": []
+          },
+          "dynamic_loading": {
+            "count": 0,
+            "examples": []
+          },
+          "other": {
+            "count": 40,
+            "examples": [
+              "__bug_noarg",
+              "__copy_from_user",
+              "__memzero",
+              "__migrate_disable",
+              "__migrate_enable",
+              "__mutex_do_init",
+              "__rt_mutex_init",
+              "__rt_spin_lock_init",
+              "__udif_free_irq",
+              "__udif_request_irq",
+              "_mutex_lock",
+              "_mutex_unlock",
+              "_raw_spin_lock_irqsave",
+              "_raw_spin_unlock_irqrestore",
+              "arch_phys_to_noncache",
+              "arch_phys_to_va",
+              "arch_va_to_phys",
+              "memcpy",
+              "memset",
+              "osal_dynamic_id",
+              "osal_free_msg",
+              "osal_rcv_msg_tmo",
+              "osal_snd_msg",
+              "osal_snd_sync_direct"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 5,
+        "defined_examples": [
+          "__this_module",
+          "cleanup_module",
+          "dma330_mem_transfer_async",
+          "init_module",
+          "udif_dma330"
+        ],
+        "evidence_id": "E-imports-04",
+        "raw_readelf": "work/firmware-survey/04-dma330.ko-readelf.stdout",
+        "readelf_returncode": 0,
+        "symbol_table_limit": "Kernel relocatable module symbols; defined globals are not an audited __ksymtab export list."
+      },
+      {
+        "path": "usr/bin/bootin.elf",
+        "size": 15336,
+        "sha256": "12150adf8cc8c23eab98a9d497e5c295566f8bfde763262d882a3bcbf32a6742",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_EXEC",
+        "entry": "0x8e41",
+        "e_flags": "0x5000002",
+        "interpreter": "//lib/ld-linux.so.3",
+        "needed": [
+          "libbackup.so",
+          "libosal_utm.so",
+          "libosal_uipc.so",
+          "libpthread.so.0",
+          "libstdc++.so.6",
+          "libm.so.6",
+          "libdl.so.2",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "librt.so.1"
+        ],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 47,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 8,
+            "examples": [
+              "__xstat@GLIBC_2.4 (3)",
+              "close@GLIBC_2.4 (2)",
+              "fcntl@GLIBC_2.4 (2)",
+              "mkdir@GLIBC_2.4 (3)",
+              "mount@GLIBC_2.4 (3)",
+              "open@GLIBC_2.4 (2)",
+              "read@GLIBC_2.4 (2)",
+              "unlink@GLIBC_2.4 (3)"
+            ]
+          },
+          "process_threads": {
+            "count": 7,
+            "examples": [
+              "_exit@GLIBC_2.4 (3)",
+              "abort@GLIBC_2.4 (3)",
+              "daemon@GLIBC_2.4 (3)",
+              "execve@GLIBC_2.4 (3)",
+              "exit@GLIBC_2.4 (3)",
+              "fork@GLIBC_2.4 (2)",
+              "waitpid@GLIBC_2.4 (2)"
+            ]
+          },
+          "dynamic_loading": {
+            "count": 0,
+            "examples": []
+          },
+          "other": {
+            "count": 32,
+            "examples": [
+              "Backup_read",
+              "_Jv_RegisterClasses",
+              "__aeabi_unwind_cpp_pr0@GCC_3.5 (4)",
+              "__aeabi_unwind_cpp_pr1@GCC_3.5 (4)",
+              "__cxa_atexit@GLIBC_2.4 (3)",
+              "__errno_location@GLIBC_2.4 (2)",
+              "__gmon_start__",
+              "__libc_start_main@GLIBC_2.4 (3)",
+              "getpid@GLIBC_2.4 (3)",
+              "getrlimit@GLIBC_2.4 (3)",
+              "memset@GLIBC_2.4 (3)",
+              "osal_free_msg",
+              "osal_rcv_msg_tmo",
+              "osal_reg_sync_msg_queue_cb",
+              "osal_snd_msg",
+              "osal_snd_sync_msg",
+              "osal_unreg_msg_queue_cb",
+              "osal_valloc_msg_wait",
+              "perror@GLIBC_2.4 (3)",
+              "printf@GLIBC_2.4 (3)",
+              "putchar@GLIBC_2.4 (3)",
+              "putenv@GLIBC_2.4 (3)",
+              "puts@GLIBC_2.4 (3)",
+              "signal@GLIBC_2.4 (3)"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 12,
+        "defined_examples": [
+          "__bss_end__",
+          "__bss_start",
+          "__bss_start__",
+          "__end__",
+          "__environ@GLIBC_2.4 (3)",
+          "_bss_end__",
+          "_edata",
+          "_end",
+          "_environ@GLIBC_2.4 (3)",
+          "_fini",
+          "_init",
+          "environ@GLIBC_2.4 (3)"
+        ],
+        "evidence_id": "E-imports-05",
+        "raw_readelf": "work/firmware-survey/05-bootin.elf-readelf.stdout",
+        "readelf_returncode": 0
+      },
+      {
+        "path": "usr/bin/im.elf",
+        "size": 23240,
+        "sha256": "ed01c9b3896febbe44e06bc82ddbe0e989ad58da82da9a7fc8c77a68b4da6cab",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_EXEC",
+        "entry": "0x92b1",
+        "e_flags": "0x5000002",
+        "interpreter": "//lib/ld-linux.so.3",
+        "needed": [
+          "libjemalloc_ds.so.1",
+          "libIMDB.so",
+          "libosal_uipc.so",
+          "libosal_utm.so",
+          "libbackup.so",
+          "libdl.so.2",
+          "libpthread.so.0",
+          "libSTMcmdexecute.so",
+          "libssl.so.3",
+          "libstdc++.so.6",
+          "libm.so.6",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "librt.so.1",
+          "libcrypto.so.3"
+        ],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 64,
+        "import_categories": {
+          "crypto": {
+            "count": 1,
+            "examples": [
+              "RAND_add@OPENSSL_3.0.0 (5)"
+            ]
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 10,
+            "examples": [
+              "__fxstat@GLIBC_2.4 (2)",
+              "close@GLIBC_2.4 (4)",
+              "mmap@GLIBC_2.4 (2)",
+              "mount@GLIBC_2.4 (2)",
+              "munmap@GLIBC_2.4 (2)",
+              "open@GLIBC_2.4 (4)",
+              "read@GLIBC_2.4 (4)",
+              "statfs@GLIBC_2.4 (2)",
+              "umount@GLIBC_2.4 (2)",
+              "write@GLIBC_2.4 (4)"
+            ]
+          },
+          "process_threads": {
+            "count": 4,
+            "examples": [
+              "abort@GLIBC_2.4 (2)",
+              "exit@GLIBC_2.4 (2)",
+              "fork@GLIBC_2.4 (4)",
+              "waitpid@GLIBC_2.4 (4)"
+            ]
+          },
+          "dynamic_loading": {
+            "count": 4,
+            "examples": [
+              "dlclose@GLIBC_2.4 (3)",
+              "dlerror@GLIBC_2.4 (3)",
+              "dlopen@GLIBC_2.4 (3)",
+              "dlsym@GLIBC_2.4 (3)"
+            ]
+          },
+          "other": {
+            "count": 45,
+            "examples": [
+              "Backup_read",
+              "Backup_write",
+              "IMDB_find_entry",
+              "IMDB_find_target_bit",
+              "IMDB_get_entries",
+              "_Jv_RegisterClasses",
+              "__aeabi_unwind_cpp_pr0@GCC_3.5 (6)",
+              "__aeabi_unwind_cpp_pr1@GCC_3.5 (6)",
+              "__cxa_atexit@GLIBC_2.4 (2)",
+              "__gmon_start__",
+              "__libc_start_main@GLIBC_2.4 (2)",
+              "free@GLIBC_2.4 (2)",
+              "getpid@GLIBC_2.4 (2)",
+              "jemalloc_show_simple_stat",
+              "malloc@GLIBC_2.4 (2)",
+              "memset@GLIBC_2.4 (2)",
+              "osal_create_waitable_thread",
+              "osal_dynamic_id",
+              "osal_free_msg",
+              "osal_rcv_msg_tmo",
+              "osal_reg_sync_msg_queue_cb",
+              "osal_set_cpu",
+              "osal_sig_sem",
+              "osal_snd_msg"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 9,
+        "defined_examples": [
+          "__bss_end__",
+          "__bss_start",
+          "__bss_start__",
+          "__end__",
+          "_bss_end__",
+          "_edata",
+          "_end",
+          "_fini",
+          "_init"
+        ],
+        "evidence_id": "E-imports-06",
+        "raw_readelf": "work/firmware-survey/06-im.elf-readelf.stdout",
+        "readelf_returncode": 0
+      },
+      {
+        "path": "usr/lib/libObj.so",
+        "size": 21285392,
+        "sha256": "a05b335ef505cc830d1f7fbead792eca4e77dbdb4e642d2225bd9983201ddfa8",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_DYN",
+        "entry": "0x10fd10",
+        "e_flags": "0x5000002",
+        "interpreter": null,
+        "needed": [
+          "libInfraFsys.so",
+          "libmprctrl.so",
+          "libMWF.so",
+          "libmpr.so",
+          "libutil_date.so",
+          "libcompassutil.so",
+          "libInfraUsbCmn.so",
+          "libsencore.so",
+          "libBizFw.so",
+          "libBizFw2.so",
+          "libNetContUtil.so",
+          "libUsbControl.so",
+          "libBackupManager.so",
+          "libNetCommon.so",
+          "libGOConnectionManager.so",
+          "libjsoncpp.so.23",
+          "libInfraMediaCommon.so",
+          "libbackup.so",
+          "libgcc_s.so.1",
+          "libc.so.6"
+        ],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_ABI_optimization_goals: Aggressive Speed",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 1939,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 33,
+            "examples": [
+              "__fxstat@GLIBC_2.4 (2)",
+              "__xstat@GLIBC_2.4 (2)",
+              "access@GLIBC_2.4 (2)",
+              "chmod@GLIBC_2.4 (2)",
+              "close@GLIBC_2.4 (2)",
+              "closedir@GLIBC_2.4 (2)",
+              "fclose@GLIBC_2.4 (2)",
+              "fcntl@GLIBC_2.4 (2)",
+              "fopen64@GLIBC_2.4 (2)",
+              "fopen@GLIBC_2.4 (2)",
+              "fread@GLIBC_2.4 (2)",
+              "fseek@GLIBC_2.4 (2)",
+              "fsync@GLIBC_2.4 (2)",
+              "fwrite@GLIBC_2.4 (2)",
+              "ioctl@GLIBC_2.4 (2)",
+              "lseek64@GLIBC_2.4 (2)",
+              "lseek@GLIBC_2.4 (2)",
+              "mkdir@GLIBC_2.4 (2)",
+              "mmap@GLIBC_2.4 (2)",
+              "mount@GLIBC_2.4 (2)",
+              "munmap@GLIBC_2.4 (2)",
+              "open64@GLIBC_2.4 (2)",
+              "open@GLIBC_2.4 (2)",
+              "opendir@GLIBC_2.4 (2)"
+            ]
+          },
+          "process_threads": {
+            "count": 44,
+            "examples": [
+              "abort@GLIBC_2.4 (2)",
+              "exit@GLIBC_2.4 (2)",
+              "kill@GLIBC_2.4 (2)",
+              "pthread_attr_destroy@GLIBC_2.4 (2)",
+              "pthread_attr_getschedparam@GLIBC_2.4 (2)",
+              "pthread_attr_init@GLIBC_2.4 (2)",
+              "pthread_attr_setdetachstate@GLIBC_2.4 (2)",
+              "pthread_attr_setinheritsched@GLIBC_2.4 (2)",
+              "pthread_attr_setschedparam@GLIBC_2.4 (2)",
+              "pthread_attr_setschedpolicy@GLIBC_2.4 (2)",
+              "pthread_attr_setscope@GLIBC_2.4 (2)",
+              "pthread_attr_setstacksize",
+              "pthread_cancel",
+              "pthread_cond_broadcast@GLIBC_2.4 (2)",
+              "pthread_cond_destroy@GLIBC_2.4 (2)",
+              "pthread_cond_init@GLIBC_2.4 (2)",
+              "pthread_cond_signal@GLIBC_2.4 (2)",
+              "pthread_cond_timedwait@GLIBC_2.4 (2)",
+              "pthread_cond_wait@GLIBC_2.4 (2)",
+              "pthread_create",
+              "pthread_detach",
+              "pthread_equal@GLIBC_2.4 (2)",
+              "pthread_exit@GLIBC_2.4 (2)",
+              "pthread_getschedparam@GLIBC_2.4 (2)"
+            ]
+          },
+          "dynamic_loading": {
+            "count": 4,
+            "examples": [
+              "dlclose",
+              "dlerror",
+              "dlopen",
+              "dlsym"
+            ]
+          },
+          "other": {
+            "count": 1858,
+            "examples": [
+              "Backup_get_datasize",
+              "Backup_nread",
+              "Backup_read",
+              "Backup_read_4Byte",
+              "Backup_read_multi",
+              "Backup_read_rst_attr",
+              "Backup_read_setting_attr",
+              "Backup_reg_cb",
+              "Backup_reset",
+              "Backup_reset_all",
+              "Backup_sync_all",
+              "Backup_sync_subsystem",
+              "Backup_unreg_cb",
+              "Backup_write",
+              "Backup_write_multi",
+              "Backup_write_setting_attr",
+              "Backup_write_vsize",
+              "Fsys_Chmod",
+              "Fsys_Close",
+              "Fsys_DestroyBackup",
+              "Fsys_FindFirst",
+              "Fsys_FindNext",
+              "Fsys_Flush",
+              "Fsys_Format"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 1953,
+        "defined_examples": [
+          "Application_System_Init",
+          "BMP_Create",
+          "CEC_exit",
+          "CEC_init",
+          "CEC_res",
+          "CEC_sus",
+          "CameraBackground_act",
+          "CameraBackground_inact",
+          "CameraBackground_init",
+          "CameraStillDate_init",
+          "CapIdSync_Init",
+          "ColorImageBlockBuffer_init",
+          "ColorImageBuffer_init",
+          "DDSUserInit",
+          "DDSUserRes",
+          "DDSUserSus"
+        ],
+        "evidence_id": "E-imports-07",
+        "raw_readelf": "work/firmware-survey/07-libObj.so-readelf.stdout",
+        "readelf_returncode": 0
+      },
+      {
+        "path": "usr/lib/libIMDB.so",
+        "size": 36460,
+        "sha256": "51a724171774d443504ca08d25c6e2d329450cc4b1002b3b13b06711d1263516",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_DYN",
+        "entry": "0x3304",
+        "e_flags": "0x5000002",
+        "interpreter": null,
+        "needed": [
+          "libpthread.so.0",
+          "libstdc++.so.6",
+          "libm.so.6",
+          "libdl.so.2",
+          "libgcc_s.so.1",
+          "libc.so.6",
+          "librt.so.1"
+        ],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_ABI_optimization_goals: Aggressive Speed",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 6,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 0,
+            "examples": []
+          },
+          "process_threads": {
+            "count": 0,
+            "examples": []
+          },
+          "dynamic_loading": {
+            "count": 0,
+            "examples": []
+          },
+          "other": {
+            "count": 6,
+            "examples": [
+              "_Jv_RegisterClasses",
+              "__aeabi_unwind_cpp_pr0@GCC_3.5 (2)",
+              "__aeabi_unwind_cpp_pr1@GCC_3.5 (2)",
+              "__cxa_finalize@GLIBC_2.4 (3)",
+              "__gmon_start__",
+              "strncmp@GLIBC_2.4 (3)"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 13,
+        "defined_examples": [
+          "IMDB_find_entry",
+          "IMDB_find_target_bit",
+          "IMDB_get_entries",
+          "__bss_end__",
+          "__bss_start",
+          "__bss_start__",
+          "__end__",
+          "_bss_end__",
+          "_edata",
+          "_end",
+          "_fini",
+          "_init",
+          "imdb_raw"
+        ],
+        "evidence_id": "E-imports-08",
+        "raw_readelf": "work/firmware-survey/08-libIMDB.so-readelf.stdout",
+        "readelf_returncode": 0
+      },
+      {
+        "path": "usr/lib/viewUnified2.so",
+        "size": 13605332,
+        "sha256": "236532d4434ceaf5b575aca284fbdca99c8bb4cf2eea638c3f2064feb3182d77",
+        "elfclass": 32,
+        "endianness": "little",
+        "machine": "EM_ARM",
+        "eabi": 5,
+        "type": "ET_DYN",
+        "entry": "0x189d88",
+        "e_flags": "0x5000002",
+        "interpreter": null,
+        "needed": [
+          "CautionConfig.so",
+          "libgcc_s.so.1",
+          "libc.so.6"
+        ],
+        "arm_attributes": [
+          "Tag_CPU_name: \"7-A\"",
+          "Tag_CPU_arch: v7",
+          "Tag_CPU_arch_profile: Application",
+          "Tag_ARM_ISA_use: Yes",
+          "Tag_THUMB_ISA_use: Thumb-2",
+          "Tag_FP_arch: VFPv3-D16",
+          "Tag_ABI_PCS_wchar_t: 4",
+          "Tag_ABI_FP_denormal: Needed",
+          "Tag_ABI_FP_exceptions: Needed",
+          "Tag_ABI_FP_number_model: IEEE 754",
+          "Tag_ABI_align_needed: 8-byte",
+          "Tag_ABI_align_preserved: 8-byte, except leaf SP",
+          "Tag_ABI_enum_size: int",
+          "Tag_ABI_HardFP_use: Deprecated",
+          "Tag_ABI_optimization_goals: Aggressive Speed",
+          "Tag_DIV_use: Not allowed"
+        ],
+        "symbol_table": ".dynsym",
+        "import_count": 1767,
+        "import_categories": {
+          "crypto": {
+            "count": 0,
+            "examples": []
+          },
+          "network": {
+            "count": 0,
+            "examples": []
+          },
+          "file_io": {
+            "count": 7,
+            "examples": [
+              "fclose@GLIBC_2.4 (2)",
+              "fopen@GLIBC_2.4 (2)",
+              "fread@GLIBC_2.4 (2)",
+              "fwrite@GLIBC_2.4 (2)",
+              "mmap@GLIBC_2.4 (2)",
+              "munmap@GLIBC_2.4 (2)",
+              "open@GLIBC_2.4 (2)"
+            ]
+          },
+          "process_threads": {
+            "count": 1,
+            "examples": [
+              "raise@GLIBC_2.4 (2)"
+            ]
+          },
+          "dynamic_loading": {
+            "count": 3,
+            "examples": [
+              "dlclose",
+              "dlopen",
+              "dlsym"
+            ]
+          },
+          "other": {
+            "count": 1756,
+            "examples": [
+              "AccessLog_Delete",
+              "Backup_write",
+              "_Jv_RegisterClasses",
+              "_Z17blogEventSequence15BlogViewOrModeli21BlogEventSequenceTypeiii",
+              "_ZN10GEN_Button10setEventIDENS_11ButtonEventEm",
+              "_ZN10GEN_Button11setHltStateEb",
+              "_ZN10GEN_Button11setWidgetIDEj",
+              "_ZN10GEN_Button12calcWorldPosEN2ux4core7Vector2E",
+              "_ZN10GEN_Button12setPushStateEb",
+              "_ZN10GEN_Button13setHoverStateEb",
+              "_ZN10GEN_Button13setPopupStateEb",
+              "_ZN10GEN_Button14getEventEnableENS_11ButtonEventE",
+              "_ZN10GEN_Button14isRepeatEnableEv",
+              "_ZN10GEN_Button14setButtonStateE15WGT_ButtonState",
+              "_ZN10GEN_Button14setEventEnableENS_11ButtonEventEb",
+              "_ZN10GEN_Button15getBtnAttributeENS_7BTN_ATTE",
+              "_ZN10GEN_Button15getBtnDispStateEv",
+              "_ZN10GEN_Button15initButtonStateE15WGT_ButtonState",
+              "_ZN10GEN_Button15initButtonStateEv",
+              "_ZN10GEN_Button15setRepeatEnableEb",
+              "_ZN10GEN_Button17isLongPressEnableEv",
+              "_ZN10GEN_Button17setHoverPushCountEh",
+              "_ZN10GEN_Button17setHoverPushStateEb",
+              "_ZN10GEN_Button18calcWorldPosForTapEv"
+            ]
+          }
+        },
+        "defined_global_or_weak_count": 2351,
+        "defined_examples": [
+          "ViewBaseMenuToInstance",
+          "ViewBatteryAuthenticationToInstance",
+          "ViewBeautyEffectToInstance",
+          "ViewCautionToInstance",
+          "ViewCreativeStyleToInstance",
+          "ViewDisplayQRCodeToInstance",
+          "ViewDummyBlackToInstance",
+          "ViewFtpSettingTransferToInstance",
+          "ViewGlobalMenuToInstance",
+          "ViewIREditOneToInstance",
+          "ViewIRShootingToInstance",
+          "ViewIndividualRecognitionToInstance",
+          "ViewMovieExpModeToInstance",
+          "ViewMovieRecPatchToInstance",
+          "ViewNtscPalSEL_DToInstance",
+          "ViewObjectTrackingToInstance"
+        ],
+        "evidence_id": "E-imports-09",
+        "raw_readelf": "work/firmware-survey/09-viewUnified2.so-readelf.stdout",
+        "readelf_returncode": 0
+      }
+    ],
+    "peer_elf_survey": "validation/elf-survey.json"
+  },
+  "reference_differences": {
+    "a7m3_version": "4.04",
+    "a7c_version": "2.03",
+    "a7m3_model": "0x71030014",
+    "a7c_model": "0x91030019",
+    "a7m3_backup": "0110_backup/SYSASTRA-DSLR/TI/CX62200_ALLLANG.bin",
+    "a7c_backup": "0110_backup/SYSASTRA-DSLR/NB/CX88600_ALLLANG.bin",
+    "published_config_equal_to_a7m3": true,
+    "source_diff_evidence": "validation/kernel-source-diff.json",
+    "source_diff_changed_files": 13,
+    "source_diff_scope": "Parent already compared every published source file; 13 changed files are in USB drivers and headers. This survey does not reclassify runtime USB compatibility.",
+    "elf_relocation_required": true,
+    "libObj_equal_to_a7m3": false,
+    "viewUnified2_equal_to_a7m3": false,
+    "module_vermagic_match_does_not_prove_all_symbol_or_hardware_compatibility": true
+  },
+  "evidence_findings_paths": [
+    {
+      "evidence": "Pinned EXE, decoded CAB, DAT checksum and Sony FDAT metadata",
+      "finding": "Exact supplied ILCE-7C 2.03 input is identified",
+      "path": "Reproduce with scripts/prepare-firmware.py and a fresh --work directory"
+    },
+    {
+      "evidence": "e2fsck -fn rc0, debugfs output versus independent ext2 reader and all five actual/replay trees",
+      "finding": "Current prepared filesystems match the extracted update; 365 devices and two FIFOs retain native types/ownership/numbers",
+      "path": "Load work/fakeroot-extract.state and use a special-file-aware copy for initramfs packing"
+    },
+    {
+      "evidence": "Readelf headers, attributes, dependencies and import categories",
+      "finding": "ARM32 base-AAPCS original ELF layout is distinct from A7M3",
+      "path": "Use A7C-specific relocation and separately validate original AP consumption"
+    }
+  ],
+  "preserved_failures": [
+    {
+      "stage": "initial metadata probe",
+      "reason": "fwtool decrypted stream is not seekable; direct readFdat failed before the corrected seekable-file probe",
+      "returncode": 1,
+      "log": "work/firmware-probe/initial-fdat-probe-failure.log"
+    },
+    {
+      "stage": "first fwtool CLI startup",
+      "reason": "Resolving the venv Python symlink selected /usr/bin/python3.14 and lost Crypto; corrected invocation retains venv path spelling",
+      "returncode": 1,
+      "log": "work/unpack.log",
+      "receipt": "work/unpack-command.json"
+    },
+    {
+      "stage": "first early rootfs metadata check",
+      "reason": "debugfs skipped a native FIFO at /dev/jet/TransferJet_APM2PCLCD; checked before filesystems were handed off, then preserved and re-extracted with FIFO support",
+      "failed_tree": "work/firmware-probe/failed-rootfs-v1",
+      "metadata_state": "work/firmware-probe/fakeroot-extract-v1.state",
+      "raw_traceback_file": null
+    },
+    {
+      "stage": "survey generator reference lookup",
+      "reason": "The first generator assumed the A7M3 manifest contains viewUnified2.so and raised KeyError. The corrected generator hashes the actual A7M3 ELF and reuses the unchanged readelf receipts.",
+      "receipt": "work/firmware-survey/generation-v2.json"
+    }
+  ],
+  "host_checks": {
+    "command": "python3 tests/test-prepare-firmware.py -v",
+    "unittest_cases": 18,
+    "passed": true,
+    "full_extraction_replay_returncode": 0,
+    "final_script_replay_receipt": "work/firmware-replay-v2.run.json",
+    "actual_default_rerun_refused_existing_rootfs": true,
+    "default_rerun_refusal_receipt": "work/firmware-default-refusal.json",
+    "update_manifest_and_fakeroot_state_preserved_on_refusal": true,
+    "all_ten_elf_digests_and_base_aapcs_attributes_rechecked": true,
+    "full_project_test_runner_executed_by_this_worker": false
+  },
+  "limits": {
+    "qemu_boot_validated_by_this_task": false,
+    "ui_validated_by_this_task": false,
+    "capture_verified": false,
+    "physical_asic_compatibility_verified": false,
+    "windows_exe_executed": false,
+    "physical_devices_accessed": false
+  }
+}

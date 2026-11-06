@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "scope": "main independent live five-tree regular bytes, symlink targets and FIFO type; fake device metadata remains separate saved-fakeroot proof",
+  "counts": {
+    "regular_files": 1076,
+    "symlinks": 160,
+    "fifos": 2,
+    "devices_in_saved_fakeroot_inventory": 365
+  }
+}

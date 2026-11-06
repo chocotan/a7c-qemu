@@ -1,0 +1,16 @@
+{
+  "reviewer": "jkl/glm-5.3",
+  "mustfix": 0,
+  "main_review": "source code and original native bodies/tables checked independently; independent property sweep recompiled/run under ASan+UBSan",
+  "property_sweep_passed": true,
+  "main_first_compile": "two unused legacy static ui-raster helpers under extra -Werror; property harness alone adds -Wno-unused-function; production plugin remains full -Werror",
+  "scope": "wrap/Morton/bilinear/edge/bounds/resource leases; does not establish physical GPU exact rounding",
+  "files": {
+    "source/ui/ui-gemini-raster.h": "34bd1800378e8f9872c856c313803c3fc7c3218da9cae6a0c27d9c4e06b8b293",
+    "source/ui/ui-gemini-backend.h": "d7f93c93ea6f1bc52ec4cd808e33769c32adc746e3e326be5ea0366a9359a82f",
+    "tests/test-a7c-gemini-filter.c": "6fccf318d148815d3fa88bc113b43dc11432a45afc8ef9fa9130aef48f39768b",
+    "tests/test-a7c-gemini-backend.c": "62e885908ab5ba99af720813bac66ad4c7fc474849982976c3b1bdf1a49c7b2f",
+    "work/sampler-independent-review/prop.c": "e5450228c1c484019dddb76c4a9181b9243d43fa27c375e5d05761c249d60b84",
+    "work/sampler-independent-review/result.log": "baa7da6ae6fa043a90f26fb69e9e03f46282fd5b7b553c2d01cce8e8a350a74a"
+  }
+}

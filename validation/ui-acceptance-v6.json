@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "original_run": "output/20261106-230445",
+  "camera": "ILCE-7C",
+  "version": "2.03",
+  "original_ap": true,
+  "original_shooting_view_created": true,
+  "shooting_view_lens_retracted_warning": true,
+  "full_shooting_hud_verified": false,
+  "original_menu": true,
+  "menu_back_to_main_pixels_identical": true,
+  "menu_reentry_pixels_identical": true,
+  "key_0x15010060_consumed": true,
+  "key_0x15010060_semantically_enter": false,
+  "gui_verified": false,
+  "qmp_exit_code": 0,
+  "signals_sent": [],
+  "capture_verified": false,
+  "physical_asic_compatibility_verified": false,
+  "frames": {
+    "main": {
+      "frame": 6,
+      "raw_sha256": "db0825266aa204ac5ae146cf07e9b3f6fcb621118ee8c2dd3b3dbe67b19a796c",
+      "png_sha256": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c",
+      "source_physical": 582254592,
+      "segments": 150
+    },
+    "menu": {
+      "frame": 13,
+      "raw_sha256": "66310996c85e32e0e0e8334c2eb50fcf6a4adcfab85330723c6f0fa5e603fdfe",
+      "png_sha256": "b99903311c126a962d0ea10dc607c9f6ad98a6302bd80a841b4d678aadcb32dc",
+      "source_physical": 581640192,
+      "segments": 150
+    },
+    "back": {
+      "frame": 17,
+      "raw_sha256": "db0825266aa204ac5ae146cf07e9b3f6fcb621118ee8c2dd3b3dbe67b19a796c",
+      "png_sha256": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c",
+      "source_physical": 581640192,
+      "segments": 150
+    },
+    "menu-reopened": {
+      "frame": 18,
+      "raw_sha256": "66310996c85e32e0e0e8334c2eb50fcf6a4adcfab85330723c6f0fa5e603fdfe",
+      "png_sha256": "b99903311c126a962d0ea10dc607c9f6ad98a6302bd80a841b4d678aadcb32dc",
+      "source_physical": 582254592,
+      "segments": 150
+    }
+  },
+  "log_sha256": "f11a7eb111d93bf7140cf03a025b7f4af8c2c3b8e3283767329c4328c426ea54",
+  "checker": "work/native-evidence-v6.json",
+  "published_images": {
+    "a7c-main.png": "2981e68af70b5a2c01f8b9608099ecc8618626b566b9ad6466d03385b8d8847c",
+    "a7c-menu.png": "b99903311c126a962d0ea10dc607c9f6ad98a6302bd80a841b4d678aadcb32dc"
+  },
+  "legacy_input_semantics_correction": {
+    "raw_menu_was_af_mf": true,
+    "raw_enter_was_down": true,
+    "original_menu_was_opened_by_native_helper": true,
+    "evidence": "validation/input-abi.json"
+  }
+}

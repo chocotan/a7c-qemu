@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "original_failed_run": "output/20261106-233325",
+  "validated_complete_frames": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14
+  ],
+  "partial_last_frame": 15,
+  "partial_last_frame_not_admitted": true,
+  "main_first_review_error": "expected frame15 READY, but original logger stopped after its own fatal parser error; corrected to exact raw boundary, original run unchanged",
+  "fix": "only complete kernel timestamp echoes are skipped; partial [   2 prefix no longer hides a native marker; JSON/page-count/index/layout/duplicate rejection unchanged",
+  "guest_rerun_required_for_new_pixels": true
+}

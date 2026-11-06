@@ -1,0 +1,9 @@
+{
+  "legacy_script_sync_check_passed": true,
+  "legacy_script_sync_scope": "read-only project-required check; this A7C product is not in the legacy script-copy set",
+  "source_downloader_offline_selftest_passed": true,
+  "full_host_suites": 16,
+  "native_and_real_window_core_passed": true,
+  "experimental_ENTER_not_delivered": true,
+  "firmware_and_generated_assets_excluded": true
+}

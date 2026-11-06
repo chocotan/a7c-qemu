@@ -1,0 +1,13 @@
+work/
+output/
+evidence/
+sources/
+*.exe
+*.dat
+*.DAT
+*.cpio
+*.so
+*.o
+*.img
+__pycache__/
+.pytest_cache/

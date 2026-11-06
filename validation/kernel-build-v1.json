@@ -1,0 +1,44 @@
+{
+  "kernel_build_passed": true,
+  "release": "3.0.27_nl-rt106+",
+  "files": {
+    "sources/sony-ilce7c-ver203/linux-kernel.tar.gz": {
+      "bytes": 54280375,
+      "sha256": "477dfb9c17aa585dc5713331ff22a43b508e3fc6a247b2458503b9c4672eaf7c"
+    },
+    "source/kernel/a7c_defconfig": {
+      "bytes": 6462,
+      "sha256": "947f987cddab8229221458034834fedfea412fd09ef31756a5350269b8d640d8"
+    },
+    "source/kernel/0001-a7c-qemu.patch": {
+      "bytes": 14325,
+      "sha256": "337b586b5377d09bed9b77ac4be59d226186053d5871a296cc4797bfe55a0ade"
+    },
+    "source/modules/dma330-stub/dma330_stub.c": {
+      "bytes": 730,
+      "sha256": "ffd7b617d01b56cf15a5cca1bb5d9f7c8b7f9c19a883aea9799ee82d13b7669c"
+    },
+    "work/kbuild-ui/arch/arm/boot/Image": {
+      "bytes": 3671300,
+      "sha256": "01858d80a9aa107d4f0e06496c39df3cdfa90c32d30b1f6ac7059e6438d08513"
+    },
+    "work/kbuild-ui/vmlinux": {
+      "bytes": 29172180,
+      "sha256": "4589f5a4e2fdf5d1abd167abbb43741c19c0aeba1014d71ecaf8e77fb1bccd9f"
+    },
+    "work/kbuild-ui/.config": {
+      "bytes": 50773,
+      "sha256": "a26c8831aac6d67fa9e8cd8b66dc46c0a9943ac592e5c601b940ab62cc23ea4f"
+    },
+    "work/modules/dma330-stub/dma330_stub.ko": {
+      "bytes": 27520,
+      "sha256": "d77f2a44a084a5e8b693323c39132549f0814d966187de8f510dfbbef500efe4"
+    }
+  },
+  "compiler": "arm-linux-gcc.br_real (Buildroot 2020.08-14-ge5a2a90) 9.3.0",
+  "external_initramfs": true,
+  "original_modules_loaded": false,
+  "firmware_ui_verified": false,
+  "initial_failure": "work/build-kernel-v1-failed.log: missing linux/ratelimit.h for explicit unsupported DMA error log, fixed and rebuilt",
+  "dma_transfer_policy": "both unsupported transfer entrypoints return -EOPNOTSUPP and log; no transfer success is claimed"
+}
